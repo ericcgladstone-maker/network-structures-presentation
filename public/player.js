@@ -108,6 +108,13 @@
       });
     });
     now.parentNode.removeChild(probe);
+    // Embedded in a host page (?embed=1), reserve only the deck column's height when the passage sits
+    // beside the deck, so the frame carries no empty space; a longer passage extends it while shown.
+    if (document.documentElement.classList.contains('embed')) {
+      var st = root.querySelector('.sp-stage'), ct = root.querySelector('.sp-controls');
+      var beside = st && now.getBoundingClientRect().left > st.getBoundingClientRect().right - 1;
+      tallest = beside ? Math.min(tallest, st.offsetHeight + (ct ? ct.offsetHeight : 0)) : 0;
+    }
     now.style.minHeight = Math.ceil(tallest) + 'px';
   }
   if (window.ResizeObserver) new ResizeObserver(sizeNow).observe(now);
