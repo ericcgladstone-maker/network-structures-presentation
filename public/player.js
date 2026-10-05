@@ -30,7 +30,7 @@
   var frame = $('deck'), box = $('stage');
   var playBtn = $('play'), track = $('track'), jump = $('jump'), prose = $('prose');
   var panel = prose.parentNode;
-  var now = $('now'), pos = $('pos'), pprev = $('pprev'), pnext = $('pnext');
+  var now = $('now'), pos = $('pos');
 
   var deck = null;          // the iframe's window once it has booted
   var cur = 0;              // state the player believes is on screen
@@ -128,19 +128,23 @@
     now.appendChild(el);
     var many = s.paragraphs.length > 1;
     pos.textContent = many ? (on + 1) + ' / ' + s.paragraphs.length : '';
-    pprev.hidden = pnext.hidden = !many;
-    pprev.disabled = on <= 0;
-    pnext.disabled = on >= s.paragraphs.length - 1;
   }
 
-  /* Step among the current page's passages. This never moves the deck: the
-     clock is set to the chosen passage's cue, so Play resumes from there. */
-  function stepPassage(d) {
-    var s = T[cur], k = shownOn + d;
-    if (k < 0 || k >= s.paragraphs.length) return;
+  /* One sequence (Eric, 2026-10-05): ‹ › and the arrow keys step one passage
+     at a time, and the deck moves with the text (the clock is set to the
+     passage's cue and pushed to the deck every frame). At either end of a page
+     they cross into the next page's first passage or the previous page's last,
+     so there is no separate level of navigation inside a page. */
+  function step(d) {
+    var s = T[cur], k = (shownOn < 0 ? 0 : shownOn) + d;
     setPlaying(false);
-    t = s.paragraphs[k].at;
-    renderTime();
+    if (k >= 0 && k < s.paragraphs.length) { t = s.paragraphs[k].at; renderTime(); return; }
+    if (d > 0 && cur < T.length - 1) go(cur + 1);
+    else if (d < 0 && cur > 0) {
+      go(cur - 1);
+      var ps = T[cur].paragraphs;
+      if (ps.length) { t = ps[ps.length - 1].at; renderTime(); }
+    }
   }
 
   /* keep the highlighted paragraph visible by scrolling the PANEL, never the page */
@@ -190,8 +194,8 @@
     else if (!playing && t === 0) go(cur);   // start the state's animation from its beginning
     setPlaying(!playing);
   });
-  $('prev').addEventListener('click', function () { go(cur - 1); });
-  $('next').addEventListener('click', function () { go(cur + 1); });
+  $('prev').addEventListener('click', function () { step(-1); });
+  $('next').addEventListener('click', function () { step(1); });
   $('restart').addEventListener('click', function () { go(0); });
   var expand = $('expand');
   if (expand) {
@@ -207,8 +211,6 @@
       fitDeck();
     });
   }
-  pprev.addEventListener('click', function () { stepPassage(-1); });
-  pnext.addEventListener('click', function () { stepPassage(1); });
   $('speed').addEventListener('change', function (e) { speed = +e.target.value; });
   jump.addEventListener('change', function (e) { go(+e.target.value); });
 
@@ -216,8 +218,8 @@
     if (e.metaKey || e.ctrlKey || e.altKey) return;
     if (e.target.closest && e.target.closest('button, select')) return;
     if (e.key === ' ' || e.key === 'k') { e.preventDefault(); playBtn.click(); }
-    else if (e.key === 'ArrowRight') { e.preventDefault(); go(cur + 1); }
-    else if (e.key === 'ArrowLeft') { e.preventDefault(); go(cur - 1); }
+    else if (e.key === 'ArrowRight' || e.key === '.') { e.preventDefault(); step(1); }
+    else if (e.key === 'ArrowLeft' || e.key === ',') { e.preventDefault(); step(-1); }
   });
 
   /* ---- rendering -------------------------------------------------------- */

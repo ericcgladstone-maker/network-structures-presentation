@@ -11,7 +11,7 @@ Every result comes from **Northline Systems**, a fictional company. Its people, 
 
 ## Use
 
-Press play, or step through the text with ‹ ›. Click the slide to step through its states, and use the reading-speed menu to go faster. Expand fills the screen; Esc exits. `?embed=1` hides the page header and the text drawers so the player can sit inside a frame.
+Press play, or step through the talk one passage at a time with ‹ › (or the arrow keys); the slide moves with the text, and past a page's last passage ‹ › turn the page. Click the slide to step through its states, and use the reading-speed menu to go faster. Expand fills the screen; Esc exits. `?embed=1` hides the page header and the text drawers so the player can sit inside a frame.
 
 Run locally with any static server, for example `python3 -m http.server 8970 --directory public`.
 
