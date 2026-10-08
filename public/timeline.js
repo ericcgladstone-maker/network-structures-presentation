@@ -9,23 +9,31 @@ window.TIMELINE = {
       "id": "intro",
       "label": "Why I think in networks",
       "heading": "What changes when relationships become part of the explanation?",
-      "duration": 103,
+      "duration": 99,
       "paragraphs": [
         {
           "at": 0,
-          "text": "I am an organizational behavior and computational social scientist. I did my doctoral training at Cornell, later served as an assistant professor of Management and Organizations, worked at the LINKS Center for Social Network Analysis, published network research in Social Networks, and applied organizational network analysis at Meta and Roku. Across those settings, one question has stayed unusually durable for me: when outcomes depend on interaction, how much can we understand by studying people one at a time?"
+          "text": "I study social networks and collective behavior, with particular attention to how relationships affect information, coordination, and organizational outcomes. I trained at Cornell, served as an assistant professor of Management and Organizations at the University of Kentucky's LINKS Center for Social Network Analysis, and subsequently applied organizational network research at Meta and Roku."
         },
         {
-          "at": 30,
-          "text": "A conventional analysis often begins with properties of individuals. We measure experience, ability, attitudes, role, tenure, location, performance, incentives, or demographics. Those variables matter. Relationships add another class of explanation. They determine who encounters whose information, whose expertise is reachable, which people repeatedly coordinate, where influence can travel, and where the functioning of a group depends on a small number of connections."
+          "at": 22,
+          "text": "Across those settings, one question has remained central: how much can we explain by studying individuals when the outcome depends on how those individuals are connected?"
         },
         {
-          "at": 55,
-          "text": "The same collection of people can therefore produce very different collective conditions depending on how they are connected. Information can remain local or cross boundaries. Knowledge can be redundant or concentrated behind one route. A group can have many capable members and still struggle to combine what they know. An employee with relatively few contacts can occupy a consequential position because those contacts connect parts of the system that otherwise rarely interact."
+          "at": 34,
+          "text": "Organizational research commonly measures characteristics of people: their experience, role, ability, attitudes, tenure, incentives, and performance. Those characteristics matter. Relationships provide another set of explanatory variables. They affect whose information a person encounters, where expertise can be reached, which groups coordinate regularly, and where work depends on a limited number of connections."
         },
         {
-          "at": 83,
-          "text": "That relational perspective is the subject of this walkthrough. I want to make the ideas concrete enough that someone who has never run a network analysis can see what changes when relationships become measurable, while retaining the methodological distinctions that matter to someone who works in this area."
+          "at": 56,
+          "text": "Two organizations with similar employees can therefore have different capacities to share knowledge and coordinate work. A group with considerable expertise may struggle when that expertise is difficult to reach. Someone with relatively few contacts may occupy an important position because those contacts connect otherwise separated groups."
+        },
+        {
+          "at": 75,
+          "text": "Network analysis makes these relational conditions measurable."
+        },
+        {
+          "at": 82,
+          "text": "I will introduce the concepts, then examine a synthetic organization built to demonstrate what those measurements can establish. The objective is to understand what relationships add to an organizational explanation and how far the resulting evidence can support decisions."
         }
       ]
     },
@@ -33,27 +41,51 @@ window.TIMELINE = {
       "id": "network",
       "label": "What a network is",
       "heading": "A network is a set of entities connected by a defined relationship.",
-      "duration": 148,
+      "duration": 154,
       "paragraphs": [
         {
           "at": 0,
-          "text": "At its simplest, a network has nodes and ties. Nodes are the entities we are studying: people, teams, organizations, projects, documents, technologies, or other objects. A tie represents a relationship we have defined between two nodes. The definition matters. “Sent a message to,” “asks for advice from,” “works on the same project as,” and “trusts” all create different networks even when the people remain exactly the same."
+          "text": "A network consists of nodes and ties. Nodes are the entities being studied, such as people, teams, organizations, projects, or documents. Ties represent a defined relationship between them."
         },
         {
-          "at": 26,
-          "text": "Once a third node enters, the pattern among ties starts to carry information of its own. A pair and their relationship form a dyad. Add a third person and the dyad can become part of a triad. If my two contacts are also connected to one another, that triad is closed. Repeat these local configurations across many actors and larger structures emerge: cohesive regions, paths, bottlenecks, and regions connected by relatively few ties. A path is a sequence of ties connecting two nodes, and the number of ties on the shortest path between them is their distance in steps. In graph theory, a bridge is an edge whose removal disconnects part of the graph. Organizational research also uses bridging more broadly for ties that span boundaries or connect otherwise weakly connected regions. People occupying those positions can act as brokers."
+          "at": 13,
+          "text": "The definition matters. Sending someone a message, asking that person for advice, collaborating on a project, and trusting that person are different relationships. They produce different networks, even when the people remain the same."
         },
         {
-          "at": 77,
-          "text": "Ties also have properties. A relationship can be directed, as when A seeks advice from B. It can be weighted, as when two people communicate repeatedly. It can persist or disappear over time. And a tie should be distinguished from whatever moves through it. The relationship between two colleagues creates an opportunity for information or support to travel. A particular message, request, idea, or decision is a flow through that relationship."
+          "at": 29,
+          "text": "The simplest relational unit is a pair, or dyad. Add another person and we can examine a triad. When all three people are connected, the triad is closed."
+        },
+        {
+          "at": 42,
+          "text": "Across many people, these local arrangements produce larger patterns. Some regions become densely connected. Others depend on a small number of routes between them."
+        },
+        {
+          "at": 54,
+          "text": "A path is a sequence of ties connecting two nodes. The shortest path gives the minimum number of steps needed to connect them under the network definition."
+        },
+        {
+          "at": 67,
+          "text": "In graph theory, a bridge is a tie whose removal disconnects part of the graph. Organizational research also uses bridging more broadly for relationships that connect groups with relatively little contact. People occupying those positions can act as brokers."
+        },
+        {
+          "at": 84,
+          "text": "Relationships may be directed, as when one employee seeks advice from another. They may be weighted by frequency or intensity. They can also form, persist, or disappear over time."
+        },
+        {
+          "at": 98,
+          "text": "We must also distinguish a relationship from what moves through it."
         },
         {
           "at": 105,
-          "text": "Keeping ties separate from flows is a useful analytic discipline. A recurring communication tie creates an opportunity for information to move. The tie alone tells us very little about which information moved, whether it was understood, or what effect it produced. Structural measures describe the architecture through which a process can unfold. Evidence about the process itself still has to be measured."
+          "text": "A communication tie creates a possible route for information. A message is an observed event along that route. The presence of the tie does not tell us what was communicated, whether it was understood, or what effect it had."
         },
         {
-          "at": 129,
-          "text": "This is why network analysis changes the unit of analysis. We still care about people and their characteristics. We also care about the pattern connecting them. A person's position is partly produced by everyone else's relationships, which means the relevant data are interdependent by construction."
+          "at": 122,
+          "text": "That distinction separates network structure from the social processes taking place within it. Structure describes opportunities and constraints. Studying information, influence, coordination, or learning requires additional evidence about what happens through those relationships."
+        },
+        {
+          "at": 137,
+          "text": "The analytical consequence is that observations are interdependent. A person's network position depends partly on relationships among other people. Those relationships become part of what we must measure to understand the person's opportunities and the organization's functioning."
         }
       ]
     },
@@ -61,35 +93,87 @@ window.TIMELINE = {
       "id": "flows",
       "label": "What flows through the ties",
       "heading": "Relationships carry content as well as structure.",
-      "duration": 256,
+      "duration": 258,
       "paragraphs": [
         {
           "at": 0,
-          "text": "A tie is a route, and the communication moving along it can be studied too. Written messages provide observable features of that flow: what people discuss, the evaluative direction of the language, and recurring patterns in how they write. Those features can be attached to a tie, a person, or a topic structure depending on the research question. The network can therefore describe both the architecture of interaction and selected properties of the communication moving through it. I introduce the measurement logic here in general form. Each idea returns with synthetic data once the case and its network have been built."
+          "text": "The structure of communication tells us who can reach whom. Message content can tell us something about what is being communicated."
         },
         {
-          "at": 38,
-          "text": "By tone I mean evaluative direction in language, from negative to positive. That is close to what sentiment analysis usually calls valence and covers less than the broader concepts of emotion or mood. A tie can summarize the mean valence of messages exchanged within one relationship. A node can summarize the valence a sender tends to use across partners. Those summaries sit at different units of analysis. One describes dyadic communication. The other describes a sender tendency. The social relations model formalizes the broader logic by separating actor, partner, and relationship components in dyadic observations. That distinction becomes important whenever a property visible on a tie could partly reflect who is sending, who is receiving, or something distinctive about the dyad."
+          "at": 11,
+          "text": "Written records contain features that can be measured at different levels. We can examine topics discussed, evaluative language, recurring linguistic patterns, and relationships among ideas. The appropriate unit may be a message, a person, a dyad, a group, or a topic."
+        },
+        {
+          "at": 29,
+          "text": "These measurements should remain distinct because they answer different questions."
+        },
+        {
+          "at": 36,
+          "text": "Consider evaluative tone, or valence. A message can express relatively positive or negative evaluation. Averaging valence across messages exchanged by two employees produces a description of their communication. Averaging a person's messages across several partners produces a description of that sender's language."
+        },
+        {
+          "at": 54,
+          "text": "The two summaries differ. Negative language across many relationships may reflect a general sender pattern, whereas negative language concentrated in one relationship suggests a more localized phenomenon."
+        },
+        {
+          "at": 67,
+          "text": "A social relations model provides a formal approach to separating actor, partner, and relationship components in dyadic observations. That decomposition matters before we attribute a property of communication to the relationship itself."
         },
         {
           "at": 82,
-          "text": "At the group level, average expressed valence is still an aggregate description. Group affective tone is a stronger construct: consistent affective reactions shared within an actual group. Emotional contagion makes a further process claim about affect spreading through interaction. A network can show similarity in expressed valence within groups or along ties. Homophily, common events, and shared work conditions can generate the same pattern. Establishing contagion requires evidence capable of distinguishing those alternatives."
+          "text": "Aggregating language to a group introduces further distinctions."
         },
         {
-          "at": 110,
-          "text": "Audience changes expression. Research on self-presentation and imagined audiences shows that people orient communication toward who they expect will see it. A private exchange and a visible group channel can therefore produce different language from the same person. The direction of that difference is empirical. A valid comparison also requires the measurement to carry comparable meaning across the channels being compared. In the later synthetic example, the channels are deliberately generated to respond differently to deadline stress. In organizational research, private content also creates a greater governance burden because collection reaches further into employee communication."
+          "at": 88,
+          "text": "The average valence of messages written by group members is a description of their communication. Group affective tone is a stronger concept concerning shared affect within an actual group. Emotional contagion makes a stronger claim again: that affect spreads through interaction."
         },
         {
-          "at": 146,
-          "text": "Language can also contain recurring individual differences, and some models use those patterns to estimate traits. Research using social-media language has found meaningful convergence between language-based personality estimates and self-reports. That evidence supports the measurement approach in that setting and still leaves substantial individual error. Transfer to workplace communication would need to be established separately. Linguistic style matching is another construct: similarity in function-word use across two texts. Prior studies associate higher matching with group cohesion and, in some settings, task performance. A single observation of matching shows similarity at one point in time. Claims about accommodation or convergence require repeated observations. Ideas create another family of network representations. A person–topic affiliation network links people to subjects they discuss. A semantic or concept network makes concepts themselves the nodes and connects them through a defined textual relation such as co-occurrence. The first asks who is talking about what. The second asks how ideas are organized in the text."
+          "at": 106,
+          "text": "Similarity in language does not establish contagion. People may communicate similarly because they select similar partners, respond to common events, or work under similar conditions."
         },
         {
-          "at": 203,
-          "text": "Each representation supports a different level of inference. A person–topic network describes associations between actors and discussed subjects. A tone layer describes expressed evaluative valence for a specified audience and channel. A language-based trait estimate is an error-prone measurement attached to a person. Turning that estimate into an organizational label can make a probabilistic inference appear more certain and durable than the measurement warrants. For the system-level diagnosis developed here, ties, interfaces, and groups are the appropriate reporting units, with person-level derived scores suppressed."
+          "at": 118,
+          "text": "Audience also matters. A private message and a public channel post may differ in content and expression because the sender anticipates different readers."
         },
         {
-          "at": 235,
-          "text": "One distinction will matter throughout the analysis. Tone and style are features that can be attached to actors or ties. Topics can create affiliations between people and content. Multiplexity refers to several kinds of social relations among the same actors. Keeping content features separate from tie definitions preserves what each network means."
+          "at": 130,
+          "text": "Comparing those channels requires attention to their purposes, subject matter, and measurement comparability. A difference between private and public language does not automatically identify the process producing it."
+        },
+        {
+          "at": 143,
+          "text": "This becomes relevant later when we examine communication around an overloaded organizational interface."
+        },
+        {
+          "at": 152,
+          "text": "Linguistic patterns can also be used to estimate individual dispositions or similarity between communication partners."
+        },
+        {
+          "at": 161,
+          "text": "Language-based personality estimates have shown associations with independently measured traits in some research settings. They remain imperfect estimates, and their validity does not automatically transfer to workplace communication."
+        },
+        {
+          "at": 174,
+          "text": "Linguistic style matching measures similarity in features such as function-word use. Matching can be associated with cohesion or task performance, but a single observation cannot establish that partners changed their styles in response to one another."
+        },
+        {
+          "at": 190,
+          "text": "Content can also define relationships of its own. A person–topic network connects employees to subjects they discuss. A semantic network connects concepts according to a defined relation in text."
+        },
+        {
+          "at": 204,
+          "text": "The first describes who discusses which topics. The second describes how concepts are associated in the language being studied."
+        },
+        {
+          "at": 214,
+          "text": "These are different measurements with different limits. A topic affiliation is not a working relationship. An estimated disposition is not a directly observed personal characteristic. Similar messages do not establish interpersonal influence."
+        },
+        {
+          "at": 229,
+          "text": "For the organizational diagnosis developed here, the most useful outputs will generally concern communication ties, teams, interfaces, and groups. Person-level inferences, particularly sensitive dispositions, are inappropriate as routine managerial labels."
+        },
+        {
+          "at": 243,
+          "text": "We will return to tone, audience, style, and topics after constructing the organization's working network. Keeping content features separate from the relationships used to construct that network allows each measure to retain a clear meaning."
         }
       ]
     },
@@ -97,31 +181,59 @@ window.TIMELINE = {
       "id": "relations",
       "label": "Organizations contain many networks",
       "heading": "The same employees participate in several relational systems at once.",
-      "duration": 140,
+      "duration": 142,
       "paragraphs": [
         {
           "at": 0,
-          "text": "Organizations make network thinking especially useful because employees are connected in more than one way. The same two people can have a reporting relationship, collaborate on a project, exchange advice, share expertise, trust one another, attend recurring meetings, or rarely interact at all. Network researchers call this multiplexity: the same set of actors can be linked through multiple kinds of relationships."
+          "text": "Employees are connected through several kinds of relationships simultaneously."
         },
         {
-          "at": 24,
-          "text": "This matters because each layer answers a different organizational question. A reporting network tells us about formal authority. An advice network tells us whom people seek when work is difficult. A collaboration network tells us where repeated work crosses organizational boundaries. An expertise-reliance network tells us whose knowledge other people depend on. Collapsing those relations into one generic “connection” would make the graph denser while making its meaning less precise."
+          "at": 7,
+          "text": "Two colleagues may share a reporting relationship, collaborate on projects, exchange advice, depend on one another's expertise, or maintain informal contact. Network research calls this multiplexity: multiple relational layers connecting the same population."
         },
         {
-          "at": 52,
-          "text": "The matched employees on the left make the added information concrete. They sit in the same department, at the same level and work arrangement, with similar tenure and almost the same number of direct working ties. Yet one can reach 219 colleagues within two steps of the network of recurring working relationships, while the other can reach 47. Their individual attributes make them look quite similar. Their relational positions give them very different access to the organization around them."
+          "at": 22,
+          "text": "The layers are not interchangeable."
         },
         {
-          "at": 82,
-          "text": "This is one way to understand social capital in relational terms. Some resources reside in a person's own knowledge and experience. Others depend on the contacts, paths, and opportunities available through that person's position. Here the relevant resource is access, and its value depends on the work being done and the relation we chose to measure."
+          "at": 28,
+          "text": "Reporting relationships describe formal authority. Advice nominations describe whom employees consult. Collaboration ties identify recurring work. Expertise-reliance ties identify whose knowledge others seek."
         },
         {
-          "at": 105,
-          "text": "Network structure has consequently been studied in relation to knowledge access, social capital, innovation, coordination, diffusion, turnover, and performance. Much of that empirical literature is observational and context-specific. The useful general proposition is narrower: patterns of relationships create opportunities and constraints that individual attributes alone do not represent."
+          "at": 39,
+          "text": "Combining them may be justified for a particular question, but it changes what the resulting network represents."
         },
         {
-          "at": 125,
-          "text": "To keep those distinctions concrete, I built one synthetic organization and use it throughout the rest of the analysis. The same workforce, relational layers, and management problem will reappear as the questions become more demanding."
+          "at": 49,
+          "text": "The two employees shown here have similar observable characteristics. They work in the same department, at the same level and work arrangement, with similar tenure and nearly identical numbers of direct working ties."
+        },
+        {
+          "at": 64,
+          "text": "Yet one can reach 219 colleagues within two steps of the recurring working network, while the other can reach only 47."
+        },
+        {
+          "at": 75,
+          "text": "Their individual attributes look similar. Their relational positions give them different access to the surrounding organization."
+        },
+        {
+          "at": 84,
+          "text": "This is one way of understanding social capital. Some resources belong to individuals, such as their own knowledge and experience. Others are accessible through relationships."
+        },
+        {
+          "at": 97,
+          "text": "The value of that access depends on the task, the resources available through contacts, and the particular network being measured."
+        },
+        {
+          "at": 107,
+          "text": "Relational structure has been investigated in connection with coordination, learning, innovation, social capital, diffusion, and organizational performance. The empirical relationships vary by context and research design."
+        },
+        {
+          "at": 120,
+          "text": "The general proposition needed here is narrower. Individual characteristics do not fully represent the opportunities and dependencies created by relationships."
+        },
+        {
+          "at": 131,
+          "text": "To examine those properties systematically, I built a synthetic organization that will remain the subject of the rest of the presentation."
         }
       ]
     },
@@ -129,27 +241,47 @@ window.TIMELINE = {
       "id": "northline",
       "label": "Northline Systems",
       "heading": "I built a synthetic organization so the network concepts can stay concrete.",
-      "duration": 107,
+      "duration": 109,
       "paragraphs": [
         {
           "at": 0,
-          "text": "Northline Systems is a fully synthetic company created for this walkthrough. Using a fixed seed, I generated 3,200 employees across five functions, 23 departments, and 302 formal teams. I then generated twelve weeks of synthetic relational evidence: advice and expertise nominations, communication traces, meetings, projects and workflow handoffs, document collaboration, skills, and project histories. None of these records describes a real employer, employee, or message."
+          "text": "Northline Systems is a synthetic organization containing 3,200 employees, five functions, 23 departments, and 302 formal teams."
         },
         {
-          "at": 26,
-          "text": "The synthetic design gives us controlled ground truth for the analytic exercises ahead. We can change the definition of a tie while holding the workforce fixed, remove an observed node and recompute the graph, or impose a hypothetical reorganization and calculate its structural exposure. Those operations tell us exactly what changes inside the generated system. Claims about how a real organization would adapt would require observed organizational evidence."
+          "at": 10,
+          "text": "Using a fixed random seed, I generated twelve weeks of relational records, including advice and expertise nominations, messages, meetings, shared projects, workflow handoffs, document collaboration, and skills."
         },
         {
-          "at": 52,
-          "text": "Northline also has a management problem. Cross-functional delivery is slowing. Employees report difficulty finding expertise outside their immediate teams. A small number of experienced people appear to carry heavy coordination loads. Leadership is considering reorganizing the company into three end-to-end business lines."
+          "at": 23,
+          "text": "No employee, organization, or message in this dataset is real."
         },
         {
-          "at": 70,
-          "text": "That proposal gives the analysis a decision to work toward. Before moving hundreds of people, I want to know how work already crosses Northline, where expertise is concentrated, which relationships create dependencies, and which parts of the current working system a new structure would preserve or disrupt."
+          "at": 30,
+          "text": "The simulation allows controlled comparisons. I can hold the workforce fixed while changing the definition of a tie. I can remove a person from the measured network and recalculate access. I can impose a proposed organizational structure and examine which relationships it would contain or divide."
         },
         {
-          "at": 90,
-          "text": "We will stay with this company for the rest of the walkthrough. Every new concept will answer a question about the same synthetic organization, and every result will remain bounded by what the corresponding network measurement can support."
+          "at": 49,
+          "text": "Those calculations establish what changes within the generated system. They do not predict how employees in an actual organization would adapt."
+        },
+        {
+          "at": 60,
+          "text": "Northline also has a management problem."
+        },
+        {
+          "at": 66,
+          "text": "Cross-functional delivery has slowed. Employees report difficulty locating expertise outside their teams. A small number of experienced people appear to carry substantial coordination work."
+        },
+        {
+          "at": 78,
+          "text": "Leadership is considering reorganizing the company into three end-to-end business lines."
+        },
+        {
+          "at": 86,
+          "text": "Before evaluating that proposal, I want to understand how work already crosses formal boundaries, where expertise is concentrated, which relationships create dependencies, and what a reorganization would change about the existing working system."
+        },
+        {
+          "at": 101,
+          "text": "The synthetic case gives each subsequent network concept a common organizational reference."
         }
       ]
     },
@@ -157,35 +289,75 @@ window.TIMELINE = {
       "id": "sources",
       "label": "Where network data come from",
       "heading": "Organizations already generate several kinds of relational evidence through ordinary work.",
-      "duration": 165,
+      "duration": 182,
       "paragraphs": [
         {
           "at": 0,
-          "text": "Take one synthetic Northline employee and hold the same twelve-week period fixed. A relational survey asks whom this person approaches for advice and whose expertise they rely on. This employee provides eight advice nominations and four expertise nominations. Those are reported, directed relationships from the respondent to named colleagues."
+          "text": "Consider one Northline employee during the twelve-week observation period."
         },
         {
-          "at": 20,
-          "text": "Communication and meeting systems give us different observations. This employee exchanged messages with 60 colleagues and attended 25 meetings. Message records can support measures of frequency, direction, reciprocity, timing, and response structure. Calendar records can create co-attendance relations. Those traces tell us that interaction occurred under a specified rule. They do not, on their own, establish advice, trust, influence, or the value of the interaction."
+          "at": 7,
+          "text": "In a relational survey, the employee names eight colleagues for advice and four for expertise. These are directed, reported relationships. The nomination identifies whom the respondent considers relevant to the question."
+        },
+        {
+          "at": 21,
+          "text": "Communication records show a different pattern. The same employee exchanged messages with 60 colleagues and attended 25 meetings."
+        },
+        {
+          "at": 31,
+          "text": "Those events can be used to construct measures of communication frequency, direction, reciprocity, and co-attendance. They establish that recorded interactions occurred under particular system rules. Their social meaning requires additional evidence."
         },
         {
           "at": 46,
-          "text": "Project and workflow systems move us closer to the production process. The same employee appears on one recorded project and in two ticket handoffs. A project tie can represent shared assignment. A handoff can represent dependency in a workflow. Documents and code create another relation: this employee co-edited 13 documents, linking people through shared work objects."
+          "text": "A frequently contacted colleague is not necessarily a trusted adviser, and attending the same meeting does not establish that two people meaningfully interacted."
         },
         {
-          "at": 69,
-          "text": "Skills and project histories create a different kind of network. The relationship now connects a person to a capability or work object. In network terminology, that is a two-mode or affiliation structure because the two sides contain different kinds of nodes. This employee has three declared skills. Later, that structure will help us ask where expertise lives and how other employees reach it."
+          "at": 57,
+          "text": "Project and workflow records provide another view."
         },
         {
-          "at": 94,
-          "text": "Each source has its own measurement limitations. Survey nominations depend on recall, interpretation, and participation. Communication logs can contain routine or low-meaning traffic. Calendars do not tell us whether everyone meaningfully interacted. Workflow systems may omit coordination that happened elsewhere. An ego network built around one employee can therefore differ depending on the source and relation we choose."
+          "at": 64,
+          "text": "The employee appears on one project and in two ticket handoffs. Shared project membership identifies a common work assignment. A ticket handoff records a transfer within a workflow."
+        },
+        {
+          "at": 77,
+          "text": "The employee also co-edited 13 documents, creating relationships through shared work objects."
+        },
+        {
+          "at": 85,
+          "text": "Skills data connect people to capabilities rather than directly to other people. This employee has three declared skills."
+        },
+        {
+          "at": 95,
+          "text": "A network containing employees on one side and skills on the other is a two-mode or affiliation network. It allows us to examine where expertise is distributed before asking whether employees can actually reach it."
+        },
+        {
+          "at": 111,
+          "text": "Each source contains different measurement errors."
         },
         {
           "at": 117,
-          "text": "Reported and observed relationships also fail in different ways. A survey nomination depends on memory, interpretation, and the respondent's understanding of the question. A digital trace records an event while leaving much of its social meaning unspecified. Agreement between the two can be informative. So can disagreement. The design question is which observation corresponds most closely to the relationship the research question actually requires."
+          "text": "Surveys depend on recall, interpretation, and participation. Digital systems capture events defined by their platforms and may omit important work occurring elsewhere. Calendar records capture attendance rather than substantive interaction. Skills inventories may be incomplete or outdated."
         },
         {
-          "at": 142,
-          "text": "Communication systems may also contain message content. Where the organization has lawful access, an appropriate research purpose, and defensible governance, that content can be analyzed. Where those conditions are not met, it should not be collected. It answers a different set of questions from relational metadata, which deserves its own treatment before we construct the Northline networks."
+          "at": 133,
+          "text": "The appropriate source depends on the relationship the question requires."
+        },
+        {
+          "at": 140,
+          "text": "Agreement between reported and recorded relationships can strengthen a measurement argument. Disagreement can also be informative, particularly when it shows that employees understand a relationship differently from what the organization's systems record."
+        },
+        {
+          "at": 155,
+          "text": "Neither source automatically supplies the definitive network."
+        },
+        {
+          "at": 161,
+          "text": "Message content can add information about subjects, tone, and expression, provided collection and analysis meet the relevant research and governance requirements."
+        },
+        {
+          "at": 172,
+          "text": "Before incorporating those features, we need to decide how the relational network itself will be constructed."
         }
       ]
     },
@@ -193,31 +365,59 @@ window.TIMELINE = {
       "id": "content",
       "label": "Structure and content",
       "heading": "Who communicates and what is communicated are different measurement problems.",
-      "duration": 152,
+      "duration": 138,
       "paragraphs": [
         {
           "at": 0,
-          "text": "A single message can generate at least two kinds of evidence. Its metadata can identify sender, recipient, time, channel, reply structure, and other properties of the interaction. Those fields help construct a communication network. The message itself contains language that can be analyzed for what people are discussing and how that discussion is expressed."
+          "text": "A message contains information about an interaction and information expressed within that interaction."
         },
         {
-          "at": 22,
-          "text": "Content analysis can support several distinct measurements. Topic measures ask what the text concerns. Sentiment usually estimates evaluative polarity toward an object or subject. Affect measures try to capture emotional tone or activation. Uncertainty measures can identify hedging, confidence language, or other linguistic markers of epistemic stance. Semantic representations can also be used to examine similarity, novelty, or how language changes as information moves."
+          "at": 8,
+          "text": "Metadata identify properties such as sender, recipient, time, channel, and reply structure. These records can support a communication network."
+        },
+        {
+          "at": 19,
+          "text": "The message text can support analyses of topic, evaluative tone, uncertainty, linguistic style, or semantic similarity."
+        },
+        {
+          "at": 28,
+          "text": "Each feature requires a separate definition."
+        },
+        {
+          "at": 34,
+          "text": "Sentiment commonly concerns evaluative polarity. Affect concerns emotional expression or activation. Uncertainty measures may identify hedging or other markers of confidence. Topic models identify patterned subject matter."
         },
         {
           "at": 47,
-          "text": "The highlighted phrases are synthetic teaching cues generated to make these measurement categories visible. They are not validated employee-level scores. In applied research, each feature needs construct validation for the population, language, task, and decision in question. A sentiment estimate requires separate evidence about relationship quality. Uncertainty language can reflect appropriate caution, ambiguity in the task, or stress. A topic classifier identifies patterned language, while causal explanation requires evidence about the process that produced it. The validity question is therefore the same one we will apply to network measures: what construct does the measurement represent, under what conditions, and how much inference can it carry?"
+          "text": "The highlighted examples are synthetic teaching material. Their labels illustrate possible measurements, not validated employee-level psychological scores."
         },
         {
-          "at": 86,
-          "text": "Northline's synthetic data already include aggregate uncertainty and negative-affect features around one overloaded coordination interface, the boundary where two departments repeatedly hand work to each other. I will use those later as a secondary description of what communication around that bottleneck looks like, and return to networks built from features like these once the Northline working network has been constructed. The structural network tells us where the interaction concentrates. The content layer adds properties of the interaction occurring there."
+          "at": 57,
+          "text": "Content measures can be misinterpreted when they are treated as direct observations of an underlying psychological or organizational state."
         },
         {
-          "at": 117,
-          "text": "Content also raises stronger governance requirements. Access to message text should follow a defined research purpose, appropriate employee and legal governance, restricted access, retention rules, and proportionality to the question. Metadata carry relational privacy risks as well. The choice between metadata and content is therefore a research-design and governance decision, not a hierarchy in which one is inherently safe."
+          "at": 67,
+          "text": "Negative language does not establish a poor relationship. Uncertainty may be an appropriate response to an unresolved technical problem. Similarity in language may reflect a shared task rather than influence."
         },
         {
-          "at": 140,
-          "text": "With those data sources separated, we can now ask the question that determines every network result downstream: exactly what qualifies as a tie?"
+          "at": 81,
+          "text": "The question is what the feature represents in the population and communication setting being studied."
+        },
+        {
+          "at": 90,
+          "text": "Northline includes generated language features around an overloaded coordination interface. Later, we will place tone, style, and topic information over the working network to examine what these additional measures reveal."
+        },
+        {
+          "at": 104,
+          "text": "Message content also creates obligations beyond those associated with relational metadata. Collection requires a defined purpose and appropriate authority. Raw text access, retention, employee disclosure, and reporting rules must follow that purpose."
+        },
+        {
+          "at": 119,
+          "text": "Metadata can carry substantial privacy risks as well. The choice of data is part of the research design."
+        },
+        {
+          "at": 129,
+          "text": "We can now construct the network, beginning with the rule that determines whether two employees are connected."
         }
       ]
     },
@@ -225,43 +425,95 @@ window.TIMELINE = {
       "id": "measurement",
       "label": "Measurement",
       "heading": "A network begins with a measurement decision.",
-      "duration": 207,
+      "duration": 224,
       "paragraphs": [
         {
           "at": 0,
-          "text": "The 27 people shown here are a readable slice of Northline's synthetic workforce. Their positions stay fixed. Only the rule used to create a relationship changes. That is the controlled comparison: the people remain identical while our measurement decision changes the graph around them. The slice is built from one employee's team, the team it works with most, and a few of that employee's other contacts, so its relationships are more often recurring than the company's as a whole. Changes in the slice therefore understate changes across Northline."
+          "text": "The 27 employees shown here are a selected portion of Northline's workforce. Their positions remain fixed while I change the rule used to construct a relationship."
+        },
+        {
+          "at": 13,
+          "text": "The slice contains one employee's team, its most frequent collaborating team, and several additional contacts. Its relationships are more recurring than those of Northline overall, so changes in this small graph understate changes across the organization."
         },
         {
           "at": 33,
-          "text": "The first rule is deliberately permissive. Two employees are connected if they exchanged at least one message during the twelve-week window. That creates 181 ties among these 27 people and 30,478 employee pairs across Northline. A brief, one-directional contact qualifies."
+          "text": "Under the first definition, two people are connected if they exchanged at least one message during the twelve-week period."
         },
         {
-          "at": 55,
-          "text": "The second rule asks for recurring reciprocal exchange. A pair must communicate in both directions within the same week in at least four of the twelve weeks. The slice falls from 181 ties to 166. Across Northline, the network falls from 30,478 pairs to 14,294. The disappearing lines are relationships that existed under the first definition and fail the second."
+          "at": 43,
+          "text": "That produces 181 ties among these 27 employees and 30,478 employee pairs across Northline."
         },
         {
-          "at": 79,
-          "text": "The advice network changes the meaning of the edge itself. A directed tie exists when one employee nominates another in response to the survey question “Whom do you go to for advice on difficult work problems?” The 27-person slice contains 97 observed advice ties, and Northline contains 10,710. Because nominations come from respondents, nonresponse also shapes which outgoing ties can be observed."
+          "at": 52,
+          "text": "A brief, one-directional exchange qualifies."
         },
         {
-          "at": 103,
-          "text": "Shared project membership produces another graph. The same 27 people now have 198 ties because two employees are connected whenever they share a recorded project or program. Northline contains 17,032 such pairs. This is common work context rather than interpersonal reliance."
+          "at": 57,
+          "text": "The second definition requires reciprocal communication within the same week in at least four of the twelve weeks."
         },
         {
-          "at": 121,
-          "text": "Time changes the graph even when the underlying relation stays fixed. The recurring communication rule produces 166 ties over twelve weeks and 50 over four weeks. Direction and weight can add further information when the research question requires them."
+          "at": 67,
+          "text": "The local network falls from 181 ties to 166. Across Northline, the count falls from 30,478 pairs to 14,294."
         },
         {
-          "at": 138,
-          "text": "Converting an event stream into a binary tie is itself a modeling choice. The recurring-exchange threshold suppresses incidental traffic and gives the resulting edge a clearer interpretation. It also discards variation in interaction intensity above and below that cutoff. When intensity is part of the mechanism, a weighted network can preserve that information. The threshold therefore belongs to the measurement model, alongside direction, boundary, and time window."
+          "at": 78,
+          "text": "The workforce has not changed. The graph is different because the measurement rule now requires recurring exchange."
         },
         {
-          "at": 164,
-          "text": "A related choice concerns who is in the network at all. Network researchers call it boundary specification. We have to define who is eligible to enter the network as well as what qualifies as a relationship. Some boundaries follow an organization's recognized membership. Others are defined analytically around a project, population, location, or period. Contractors, clients, recent leavers, and external collaborators can produce materially different networks from “current employees only.”"
+          "at": 87,
+          "text": "The advice network uses another kind of evidence."
         },
         {
-          "at": 192,
-          "text": "For the rest of Northline, each analysis should therefore tell you the relation, boundary, and time window it uses. Centrality, community structure, brokerage, and vulnerability acquire meaning only after those choices are fixed."
+          "at": 94,
+          "text": "A directed tie is created when one employee names another in response to the question, “Whom do you go to for advice on difficult work problems?”"
+        },
+        {
+          "at": 107,
+          "text": "The 27-person slice contains 97 observed advice ties. Northline contains 10,710."
+        },
+        {
+          "at": 114,
+          "text": "These ties are reported by respondents, so nonresponse affects which outgoing nominations can be observed."
+        },
+        {
+          "at": 123,
+          "text": "Shared project membership produces 198 ties in the slice and 17,032 pairs across Northline. Those edges represent common work assignments rather than reported reliance or interpersonal communication."
+        },
+        {
+          "at": 136,
+          "text": "The observation window also matters."
+        },
+        {
+          "at": 142,
+          "text": "Under the reciprocal communication rule, the slice contains 166 ties over twelve weeks but only 50 over four weeks."
+        },
+        {
+          "at": 152,
+          "text": "Changing the time window changes which relationships satisfy the same underlying definition."
+        },
+        {
+          "at": 160,
+          "text": "Binary tie construction discards some information."
+        },
+        {
+          "at": 166,
+          "text": "A recurring-exchange threshold helps exclude incidental communication, but it also treats every qualifying relationship as present regardless of its intensity. A weighted network may be preferable when the amount of interaction is central to the research question."
+        },
+        {
+          "at": 183,
+          "text": "The threshold, direction, weight, and observation period therefore belong to the measurement specification."
+        },
+        {
+          "at": 191,
+          "text": "The other necessary choice is the network boundary."
+        },
+        {
+          "at": 198,
+          "text": "Current employees, contractors, former employees, clients, and project partners may all be relevant, depending on the question. Including or excluding them changes the network's structure and the positions measured within it."
+        },
+        {
+          "at": 212,
+          "text": "These decisions determine what subsequent statistics mean. Centrality, cohesion, brokerage, and vulnerability describe a particular network constructed from specified relationships, people, and periods."
         }
       ]
     },
@@ -269,39 +521,71 @@ window.TIMELINE = {
       "id": "formal-working",
       "label": "Formal and working structure",
       "heading": "The org chart is one layer of the organization.",
-      "duration": 167,
+      "duration": 173,
       "paragraphs": [
         {
           "at": 0,
-          "text": "Each circle in the first view represents one of Northline's 302 formal teams. The circles are arranged inside five functions according to the administrative structure. That representation tells us where authority and formal responsibility sit."
+          "text": "The first view represents Northline's 302 formal teams within its five functions."
         },
         {
-          "at": 16,
-          "text": "The same 302 teams can also be arranged using Northline's measured working network, defined here from recurring collaboration and advice. Teams with more working relationships are pulled closer together. The nodes have not changed identity. The geometry is now representing relational structure rather than reporting structure. I combine the two relations deliberately: either a recurring exchange or an advice nomination counts as a working tie, because each gives work a route between two people. The cost is that later results describe that combined relation rather than either one alone."
+          "at": 8,
+          "text": "The arrangement reflects reporting structure. It shows how administrative authority and responsibility are organized."
         },
         {
-          "at": 49,
-          "text": "Community detection summarizes this graph into regions with relatively dense internal connections and fewer external connections. Northline's working network contains 38 detected communities, 35 of them large enough for the current comparison. Twenty-six of those larger communities mostly reproduce one formal department. Three span at least three functions."
+          "at": 17,
+          "text": "The second view contains the same teams, now positioned according to a working network constructed from recurring collaboration and advice."
         },
         {
-          "at": 69,
-          "text": "These communities are algorithmic partitions of the working network we specified. Louvain searches for a partition with relatively dense ties inside communities and sparser ties between them. The resulting partition can change with the relation, time window, algorithm, and resolution, especially when an organization contains nested structure. I therefore treat a detected community as a diagnostic hypothesis about a boundary and then ask whether that boundary corresponds to work processes, geography, projects, or organizational history."
+          "at": 27,
+          "text": "The two relations are combined deliberately. Either a recurring exchange or an advice nomination can establish a working tie. This provides a broader picture of routes through which work and information may move, at the cost of combining relations with different meanings."
+        },
+        {
+          "at": 45,
+          "text": "Community detection identifies regions with relatively dense internal ties."
+        },
+        {
+          "at": 52,
+          "text": "Northline contains 38 detected communities, including 35 sufficiently large for the present comparison. Twenty-six of those larger communities largely reproduce a formal department. Three extend across at least three functions."
+        },
+        {
+          "at": 66,
+          "text": "These are algorithmically detected partitions of the specified working network."
+        },
+        {
+          "at": 74,
+          "text": "The Louvain method identifies communities by optimizing a structural criterion. Its results depend on the graph, algorithm, and resolution. A detected community is therefore a description of relational structure, not automatically a meaningful organizational group."
+        },
+        {
+          "at": 89,
+          "text": "The interpretation must be checked against actual work, projects, geography, and organizational history."
         },
         {
           "at": 98,
-          "text": "Implementation and Delivery makes the distinction concrete. It is one formal department, yet its working relationships separate into East and Central communities whose internal ties are about 93 times denser than the ties between them. The department label therefore contains a strong relational boundary."
+          "text": "Implementation and Delivery illustrates the difference."
+        },
+        {
+          "at": 104,
+          "text": "It is one formal department, but its working relationships divide into East and Central communities. Ties within those communities are approximately 93 times denser than ties between them."
         },
         {
           "at": 117,
-          "text": "Acquisition history appears as another pattern. Legacy A and Legacy B employees remain concentrated within earlier boundaries. Formal integration has occurred. Relational integration is moving on a different timetable."
+          "text": "The formal label includes a pronounced relational boundary."
         },
         {
-          "at": 131,
-          "text": "Across Northline, 83 percent of employee-level working ties remain within a department. Most relational activity therefore still follows the formal organization. The network adds cross-functional communities, internal splits, and historical boundaries that the org chart alone does not show."
+          "at": 124,
+          "text": "Acquisition history appears in the network as well. Employees from Legacy A and Legacy B remain concentrated within earlier organizational boundaries, despite their formal integration into Northline."
         },
         {
-          "at": 148,
-          "text": "The practical question is now sharper. Dense local structure can support coordination when the work belongs together. It can also make important knowledge difficult to reach when the work repeatedly crosses the boundary."
+          "at": 137,
+          "text": "Across the company, 83 percent of working ties remain within departments."
+        },
+        {
+          "at": 144,
+          "text": "Most recorded interaction therefore follows the formal organization. The relational view adds internal divisions, cross-functional communities, and historical boundaries that the org chart does not represent."
+        },
+        {
+          "at": 157,
+          "text": "Whether those boundaries are beneficial depends on the work. Dense local ties can support coordination, but they can also limit access to information held elsewhere."
         }
       ]
     },
@@ -309,39 +593,75 @@ window.TIMELINE = {
       "id": "cohesion",
       "label": "Cohesion",
       "heading": "Cohesion helps when the work belongs together.",
-      "duration": 158,
+      "duration": 177,
       "paragraphs": [
         {
           "at": 0,
-          "text": "The first network is one 12-person Northline delivery team. Eighty-eight percent of all possible internal ties are present. In network terms, its density is high. Most members can reach one another directly, and there are many redundant local routes."
+          "text": "The first example is a Northline delivery team with twelve employees."
         },
         {
-          "at": 17,
-          "text": "Density and closure have long been associated with mechanisms such as trust, shared expectations, coordination, and the ability to enforce local norms. Those mechanisms can be valuable when work is tightly interdependent. Northline's overall working-network density is only 0.32 percent, so 88 percent inside this team represents an exceptionally cohesive local structure."
+          "at": 8,
+          "text": "Eighty-eight percent of possible internal ties are present. Most employees can reach one another directly, and there are numerous alternative local paths."
         },
         {
-          "at": 38,
-          "text": "One distinction is easy to blur. Tie strength is a property of a relationship between two actors. Density and closure describe a larger set of actors. A team can be dense because many pairs are connected even when some individual relationships are weak. A sparse network can still contain a few very strong relationships. The concepts therefore identify different relational mechanisms."
+          "at": 19,
+          "text": "Northline's organization-wide working-network density is only 0.32 percent, so this team is exceptionally cohesive relative to the larger system."
         },
         {
-          "at": 63,
-          "text": "The second example contains a different task requirement. Legacy A has 115 employees with data-pipeline expertise and Legacy B has 91. The two expert populations share only one observed working tie in the synthetic network."
+          "at": 29,
+          "text": "Closure and density can support coordination, shared expectations, trust, and the enforcement of local norms. Those properties may be valuable when work requires frequent mutual adjustment."
+        },
+        {
+          "at": 42,
+          "text": "The same density is not necessarily beneficial for every task."
+        },
+        {
+          "at": 49,
+          "text": "Tie strength and network cohesion also describe different properties."
+        },
+        {
+          "at": 56,
+          "text": "Tie strength concerns a particular relationship. Density concerns the number of relationships present among a set of actors. A dense group can contain weak individual ties, and a sparse network can contain several strong ones."
+        },
+        {
+          "at": 72,
+          "text": "Consider two populations of data-pipeline specialists."
         },
         {
           "at": 78,
-          "text": "The “about 34” comparison uses Northline's organization-wide average tie rate as a simple descriptive baseline. It is not a statistical null model that preserves degree, geography, reporting structure, or opportunity. Its role is modest: relative to the company's general interaction rate, one tie between two expertise pools of this size is strikingly sparse."
+          "text": "Legacy A contains 115 employees with the relevant expertise. Legacy B contains 91. They share only one observed working tie."
         },
         {
-          "at": 100,
-          "text": "Both groups ran separate “Pipeline rebuild” projects during the same period. That work history gives the structural boundary practical meaning. Northline contains two populations with overlapping expertise that rarely encounter one another while working on similar problems."
+          "at": 89,
+          "text": "If we applied Northline's organization-wide average tie rate as a simple descriptive comparison, we would expect roughly 34 ties between populations of those sizes."
         },
         {
-          "at": 116,
-          "text": "Classic weak-tie reasoning helps with the cross-boundary side of the problem. Infrequent or weak relationships can provide access to nonredundant information because they connect otherwise separated regions. Hansen's organizational research adds an important qualification: weak interunit ties can help people locate knowledge, while transferring complex knowledge may require stronger relationships. The value of a bridge therefore depends on what has to cross it."
+          "at": 101,
+          "text": "That is not a formal statistical null model. It does not preserve degree, opportunity, reporting structure, geography, or project assignment. It simply makes the observed separation easier to interpret."
         },
         {
-          "at": 141,
-          "text": "The organizational question is therefore task-specific: what does cohesion help this group do, and what must cross its boundary for the organization to function? Once the boundary matters, we can ask which positions actually carry those cross-boundary relationships."
+          "at": 114,
+          "text": "The two groups also worked on separate projects named “Pipeline rebuild” during the same period."
+        },
+        {
+          "at": 123,
+          "text": "The structural boundary therefore coincides with similar work occurring in separate expertise pools."
+        },
+        {
+          "at": 132,
+          "text": "Weak-tie research identifies one potential advantage of cross-boundary relationships: access to information that is less redundant than information circulating within a tightly connected group."
+        },
+        {
+          "at": 144,
+          "text": "Hansen's organizational research adds an important distinction. Weak interunit ties can help locate knowledge, while transferring complex knowledge may require stronger relationships."
+        },
+        {
+          "at": 155,
+          "text": "A bridge's value depends on what needs to cross it."
+        },
+        {
+          "at": 162,
+          "text": "Northline's problem is therefore not simply that one group is cohesive and another is disconnected. The question is whether the relationships available match the knowledge and coordination demands of the work."
         }
       ]
     },
@@ -349,39 +669,71 @@ window.TIMELINE = {
       "id": "centrality",
       "label": "Centrality",
       "heading": "“Central” depends on the question.",
-      "duration": 159,
+      "duration": 154,
       "paragraphs": [
         {
           "at": 0,
-          "text": "Employee A and Employee B are two synthetic Northline employees chosen because their positions separate two forms of structural importance. Both views show every direct working-network tie for the focal employee."
+          "text": "Employees A and B occupy different positions in Northline's working network."
         },
         {
-          "at": 14,
-          "text": "A has 72 direct ties. Eighty-nine percent remain inside the 440-person Implementation department. A is a highly connected local hub."
+          "at": 8,
+          "text": "A has 72 direct ties, with 89 percent inside the 440-person Implementation department."
         },
         {
-          "at": 25,
-          "text": "B has only 25 direct ties, but they reach four functions. Those relationships place B on many more of the shortest cross-functional routes through the measured working network."
+          "at": 16,
+          "text": "B has only 25 direct ties, but those relationships reach four functions."
         },
         {
-          "at": 38,
-          "text": "Degree counts direct ties. A's degree is much higher. Betweenness, one common index of brokerage, asks how often a node lies on shortest paths connecting other parts of the graph. A carries 0.0471 percent of Northline's cross-function shortest paths. B carries 3.08 percent. The difference is produced by where the relationships lead."
+          "at": 24,
+          "text": "Degree counts direct relationships. By that measure, A is considerably more connected."
         },
         {
-          "at": 60,
-          "text": "Centrality is a family of measures because “important position” can mean several things. Degree emphasizes direct connection. Betweenness emphasizes intermediary position. Closeness asks how near a node is to the rest of a graph under a specified distance definition. Eigenvector-type measures give more weight to connections with other well-connected nodes. The right measure depends on the mechanism being investigated."
+          "at": 32,
+          "text": "Betweenness measures a different property: how often a node lies on shortest paths connecting other nodes."
         },
         {
-          "at": 83,
-          "text": "Centrality scores also inherit the relation and boundary of the network. B is central here because we are measuring cross-functional paths in Northline's working network. An advice network, trust network, expertise network, or narrower population could produce a different ranking. Centrality is therefore a property of a node within a specified relational system. That is why the useful question is “central for what process?”"
+          "at": 41,
+          "text": "A carries 0.0471 percent of Northline's cross-functional shortest paths. B carries 3.08 percent."
         },
         {
-          "at": 109,
-          "text": "B's position is also related to the structural-holes tradition. A structural hole is a gap in connection or redundancy between contacts or regions of a network. A broker spans that gap through ties to both sides. Such a position can provide access to nonredundant information and opportunities to coordinate across the gap, while also creating dependency and workload. Brokerage can also be used to connect others directly. Obstfeld's tertius iungens describes a joining orientation in which a broker introduces and links the people they span."
+          "at": 50,
+          "text": "B's importance comes from where the ties lead, not how many there are."
         },
         {
-          "at": 141,
-          "text": "The same person may occupy very different positions in advice, trust, communication, expertise, and collaboration networks. Northline's immediate problem concerns cross-functional coordination, so brokerage in the working network is relevant here. The next question concerns the resource those relationships make reachable: knowledge."
+          "at": 58,
+          "text": "Centrality is a family of measurements rather than one definition of importance."
+        },
+        {
+          "at": 66,
+          "text": "Degree concerns direct connection. Betweenness concerns intermediary position. Closeness concerns network distance. Eigenvector-type measures emphasize relationships with other well-connected nodes."
+        },
+        {
+          "at": 77,
+          "text": "The measure is useful when its definition corresponds to the process being studied."
+        },
+        {
+          "at": 85,
+          "text": "B is central for cross-functional paths in this particular working network. The same employee might occupy a different position in the advice, trust, expertise, or reporting network."
+        },
+        {
+          "at": 98,
+          "text": "The relevant question is what process requires this kind of position."
+        },
+        {
+          "at": 106,
+          "text": "Brokerage research provides a further interpretation."
+        },
+        {
+          "at": 112,
+          "text": "A structural hole is a gap in connection or redundancy between contacts or regions. A broker connects across that gap and may gain access to information or opportunities that are otherwise separated."
+        },
+        {
+          "at": 126,
+          "text": "That position can also create dependence on the broker. Brokerage need not mean preserving separation. Obstfeld's tertius iungens describes a joining orientation in which a broker helps other people connect."
+        },
+        {
+          "at": 140,
+          "text": "Northline's coordination problem makes cross-functional brokerage relevant. We can now ask whether the employees occupying important communication positions are also the people on whom access to expertise depends."
         }
       ]
     },
@@ -389,39 +741,75 @@ window.TIMELINE = {
       "id": "expertise",
       "label": "Knowledge has its own network",
       "heading": "Communication volume and expertise dependency describe different structures.",
-      "duration": 153,
+      "duration": 175,
       "paragraphs": [
         {
           "at": 0,
-          "text": "This view adds capabilities to Northline. The circles on one side are employees. The labels on the other are skills and technical domains. A line says that an employee holds a capability. Network researchers call this a two-mode or bipartite network because the two sides contain different kinds of nodes."
+          "text": "This view connects employees to capabilities."
         },
         {
-          "at": 21,
-          "text": "Most Northline capabilities are widely distributed. Data pipelines, event streaming, cloud infrastructure, API design, testing, and data migration are each held by many employees. The synthetic Settlement engine domain is different. Only three employees hold it, and specialist S is the only expert-level holder."
+          "at": 6,
+          "text": "The network has two kinds of nodes: people and skills. A tie indicates that an employee possesses a particular capability."
         },
         {
-          "at": 39,
-          "text": "Now compare S with H. H produces 6,835 messages during the twelve-week window and coordinates broadly. H's rarest skill is still shared with roughly 160 colleagues. S sends only 1,430 messages, yet 13 colleagues nominate S as an expertise source and access to the Settlement engine concentrates heavily around S."
+          "at": 17,
+          "text": "Many capabilities are broadly distributed across Northline. Data pipelines, event streaming, cloud infrastructure, API design, testing, and data migration each have substantial populations of holders."
         },
         {
-          "at": 60,
-          "text": "Communication volume and expertise dependency therefore answer different organizational questions. A visible communicator can be easy to replace with respect to a particular capability. A lower-volume employee can sit behind a rare knowledge dependency."
+          "at": 29,
+          "text": "The synthetic Settlement engine capability is much rarer. Three employees hold it, and specialist S is the only expert-level holder."
         },
         {
-          "at": 75,
-          "text": "A two-mode network can be projected onto the employee side by connecting people who share a capability. That operation changes the meaning of the edge. Two employees who share a skill may never work together, know one another, or have practical access to one another's knowledge. For Northline, capability overlap and relational access therefore remain separate measurements."
+          "at": 40,
+          "text": "Compare S with employee H."
         },
         {
-          "at": 98,
-          "text": "Legacy A and Legacy B make the access problem concrete. Both contain data-integration expertise, yet the highlighted expert populations share only one observed working tie. Formal membership in the same company has not produced much relational access between the pools."
+          "at": 45,
+          "text": "H sends 6,835 messages during the twelve-week period and coordinates broadly. H's rarest listed capability is shared with approximately 160 colleagues."
         },
         {
-          "at": 116,
-          "text": "This connects to the literature on transactive memory, which studies systems in which performance depends partly on knowing who knows what and being able to retrieve that knowledge through other people. Most of that empirical tradition operates at the team level. Here I am extending the same intuition to an organizational question: can Northline locate and reach the knowledge already distributed across its workforce?"
+          "at": 56,
+          "text": "S sends only 1,430 messages, but thirteen colleagues nominate S as an expertise source. Access to the Settlement engine concentrates around this lower-volume communicator."
         },
         {
-          "at": 141,
-          "text": "Once expertise and access are represented together, a new question becomes measurable: how much of that access depends on a particular person or route?"
+          "at": 68,
+          "text": "The distinction is organizationally important."
+        },
+        {
+          "at": 74,
+          "text": "Communication volume describes recorded activity. Expertise dependency describes reliance on a capability and the routes through which that capability can be reached."
+        },
+        {
+          "at": 85,
+          "text": "The most active communicator need not be the person whose departure would place scarce knowledge at risk."
+        },
+        {
+          "at": 95,
+          "text": "A two-mode expertise network can be projected into an employee network by connecting people who share a skill."
+        },
+        {
+          "at": 105,
+          "text": "But shared capability is not the same as a working relationship. Two employees may know the same technology without knowing one another or being able to use one another's expertise."
+        },
+        {
+          "at": 119,
+          "text": "Legacy A and Legacy B illustrate this distinction again. Both contain data-integration specialists, yet their expert populations share one observed working tie."
+        },
+        {
+          "at": 130,
+          "text": "Northline has the capability in multiple places without much measured connection between those places."
+        },
+        {
+          "at": 139,
+          "text": "Transactive-memory research studies systems in which effective work depends partly on knowing who possesses relevant knowledge and being able to retrieve it."
+        },
+        {
+          "at": 150,
+          "text": "Much of that evidence comes from teams. Here the organizational question is related but broader: can Northline locate and reach expertise already present across its workforce?"
+        },
+        {
+          "at": 163,
+          "text": "Representing capabilities and working relationships together lets us identify dependencies that neither a skills inventory nor a communication count would show by itself."
         }
       ]
     },
@@ -429,43 +817,79 @@ window.TIMELINE = {
       "id": "vulnerability",
       "label": "Vulnerability",
       "heading": "Structural importance becomes visible when a critical route disappears.",
-      "duration": 165,
+      "duration": 180,
       "paragraphs": [
         {
           "at": 0,
-          "text": "Specialist S is the focal node here. Across Northline, 196 employees work on programs that require the Settlement engine capability. The screen shows a readable 38-person sample from that affected population, alongside statistics calculated over all 196."
+          "text": "Across Northline, 196 employees work on programs requiring the Settlement engine capability."
         },
         {
-          "at": 16,
-          "text": "With S present, 188 of the 196 employees can reach the domain, meaning a colleague who holds it, within two steps of the measured working network. Their typical distance is 1.92 steps."
+          "at": 8,
+          "text": "The screen shows 38 of those employees for readability, while the calculations cover all 196."
         },
         {
-          "at": 35,
-          "text": "The structural stress test removes S and S's observed ties, then recalculates the graph. Only 17 of the 196 remain within two steps. Typical distance rises to 3.71 steps. More than 32,000 cross-function shortest routes become longer, and additional traffic shifts toward another connector who was already in the top two percent of brokerage."
+          "at": 21,
+          "text": "With specialist S present, 188 employees can reach a colleague holding the capability within two steps of the working network."
         },
         {
-          "at": 57,
-          "text": "Notice the form of degradation. Access can deteriorate sharply even while the measured graph remains broadly connected. Short paths disappear, typical distance increases, and traffic shifts toward another connector. Network resilience therefore has several dimensions: connectivity, path length, redundancy, and concentration can move differently under the same removal."
+          "at": 32,
+          "text": "Typical network distance is 1.92 steps."
         },
         {
-          "at": 77,
-          "text": "This is a targeted removal analysis. Network robustness research asks how connectivity, reachability, or other system properties change when particular nodes or ties disappear. Random removal and targeted removal can produce very different outcomes when connectivity is concentrated."
+          "at": 38,
+          "text": "I then remove S and the associated working ties and recalculate the graph."
         },
         {
-          "at": 94,
-          "text": "The result is conditional on the measured network. A real departure would initiate adaptation. Employees could create new relationships, managers could redistribute work, documentation could improve, and unobserved relationships may already exist. The stress test therefore identifies a structural dependency in the observed system. It does not forecast the realized organizational consequences of S resigning."
+          "at": 46,
+          "text": "Only seventeen of the 196 employees remain within two steps of the expertise. Typical distance rises to 3.71."
         },
         {
-          "at": 116,
-          "text": "Northline can then impose a structural hypothesis. Three colleagues who already work on the affected programs are cross-trained in the rare domain. After those additional expertise paths are added, 188 of the 196 employees remain within two steps even when S is removed again."
+          "at": 56,
+          "text": "More than 32,000 cross-functional shortest routes become longer, and additional intermediary demand shifts toward a connector already in the top two percent of brokerage."
         },
         {
-          "at": 135,
-          "text": "That does not establish that cross-training will improve real performance. It shows that the intended structural mechanism, redundant access to the capability, changes in the desired direction inside the synthetic network. The corresponding organizational intervention still requires prospective evaluation."
+          "at": 68,
+          "text": "The important result is the form of degradation."
         },
         {
-          "at": 152,
-          "text": "The same kind of concentration can also have consequences before anyone leaves. A person who repeatedly bridges separated groups can accumulate the coordination burden generated by that position."
+          "at": 75,
+          "text": "The network can remain broadly connected while access deteriorates sharply. Short paths disappear, distances increase, and intermediary work becomes more concentrated."
+        },
+        {
+          "at": 86,
+          "text": "Connectivity, reachability, redundancy, and path length are distinct measures of robustness."
+        },
+        {
+          "at": 93,
+          "text": "Targeted removal and random removal can produce different outcomes, particularly when important routes are concentrated around a small number of positions."
+        },
+        {
+          "at": 104,
+          "text": "Here the targeted removal identifies a dependency created by Northline's measured working relationships."
+        },
+        {
+          "at": 113,
+          "text": "An actual departure would also trigger adaptation. People might form new ties, redistribute work, improve documentation, or discover relationships omitted from the data."
+        },
+        {
+          "at": 124,
+          "text": "The calculation identifies structural exposure under the specified network, not the eventual organizational consequences of S leaving."
+        },
+        {
+          "at": 134,
+          "text": "Northline can test a corresponding structural intervention."
+        },
+        {
+          "at": 140,
+          "text": "Three colleagues already working on the affected programs receive the Settlement engine capability through cross-training. When S is removed from this modified network, 188 of the 196 employees again remain within two steps of the expertise."
+        },
+        {
+          "at": 156,
+          "text": "The added redundancy produces the intended structural change. Whether cross-training would improve actual delivery, retrieval time, or resilience remains an organizational intervention question."
+        },
+        {
+          "at": 168,
+          "text": "A related dependency can emerge even without a departure: brokers may carry so much coordination work that their useful position becomes an operational bottleneck."
         }
       ]
     },
@@ -473,43 +897,75 @@ window.TIMELINE = {
       "id": "overload",
       "label": "Overload",
       "heading": "A valuable network position can carry too much coordination work.",
-      "duration": 157,
+      "duration": 168,
       "paragraphs": [
         {
           "at": 0,
-          "text": "Broker B is the employee we first saw connecting four functions. The working network made B useful because requests could cross boundaries through that position. Northline's communication metadata now let us ask what carrying that position looks like over time."
+          "text": "Broker B connects four functions. That position allows requests to cross organizational boundaries, but it also concentrates coordination activity."
         },
         {
-          "at": 17,
-          "text": "Across synthetic Northline, 32 employees occupy similarly high-brokerage positions. They represent roughly one percent of employees and receive 13 percent of cross-function requests."
+          "at": 10,
+          "text": "Northline's communication records make the associated work visible over time."
+        },
+        {
+          "at": 18,
+          "text": "Thirty-two employees occupy similarly high-brokerage positions. Together they represent approximately one percent of the workforce but receive thirteen percent of cross-functional requests."
         },
         {
           "at": 29,
-          "text": "The twelve-week trace shows when those requests reach B. During ordinary weeks, the brokers' median reply time is 14.3 hours. During deadline weeks it rises to 22.8 hours. Other employees' median stays at 3.9 hours in both kinds of week. The structural resource has become an operational bottleneck."
+          "text": "During ordinary weeks, these brokers have a median reply time of 14.3 hours. During deadline weeks, it rises to 22.8 hours."
         },
         {
-          "at": 49,
-          "text": "This is an important interpretive feature of brokerage. The same position can facilitate integration and concentrate the work required to produce that integration. Requests, translation, escalation, coordination, and interruption can accumulate at the interface."
+          "at": 40,
+          "text": "For other employees, the median remains at 3.9 hours in both periods."
+        },
+        {
+          "at": 48,
+          "text": "The additional response delay is concentrated among employees already occupying important intermediary positions."
+        },
+        {
+          "at": 56,
+          "text": "Brokerage can facilitate integration and concentrate the burden of producing it."
         },
         {
           "at": 64,
-          "text": "The content layer we introduced earlier adds a second description. Around one overloaded synthetic interface, aggregate uncertainty is 0.41 during deadline periods and 0.22 in other periods. The corresponding negative-affect feature is 0.27 during deadline periods and 0.14 otherwise."
+          "text": "Requests, translation between groups, escalation, and coordination may all pass through a limited set of people. The value of their position and the demands placed on them arise from the same relational structure."
         },
         {
-          "at": 81,
-          "text": "Those are engineered synthetic text measures. They describe how the generated language around this interface changes with deadline conditions. They do not establish relationship quality, employee wellbeing, hostility, or the cause of the delay. Those interpretations would require validated measures and additional evidence."
+          "at": 79,
+          "text": "Northline's synthetic message content changes around one such interface."
         },
         {
-          "at": 100,
-          "text": "These patterns are descriptive features of the same synthetic work process. Deadline periods generate more requests, slower broker replies, and different language cues together. Several causal sequences remain possible: brokerage can attract load, heavy coordination work can create brokerage, and the two processes can reinforce one another. The operational diagnosis is concentration at the interface. Causal attribution requires a different research design."
+          "at": 86,
+          "text": "Aggregate uncertainty rises from 0.22 in ordinary periods to 0.41 during deadlines. The generated negative-affect feature rises from 0.14 to 0.27."
         },
         {
-          "at": 124,
-          "text": "For leadership, the actionable object is the interface. Rewarding a broker can recognize valuable work. Redistributing coordination capacity addresses a different issue: whether the organization continues to depend on the same small number of people to integrate work across boundaries."
+          "at": 97,
+          "text": "These features describe the language produced by the simulation. They do not establish employee distress, hostile relationships, or the cause of the observed delays."
         },
         {
-          "at": 142,
-          "text": "The uncertainty and negative-affect features around this interface are one kind of content measure. A fuller synthetic content layer, with message tone, audience, style, and topics, can be laid over the working network itself."
+          "at": 109,
+          "text": "The same periods contain higher coordination demand, slower broker responses, and different language patterns."
+        },
+        {
+          "at": 118,
+          "text": "Several causal accounts are possible. Brokerage may attract additional requests. Heavy coordination work may create brokerage. The processes may also reinforce one another."
+        },
+        {
+          "at": 129,
+          "text": "The present evidence identifies concentration and associated variation. It does not distinguish those causal sequences."
+        },
+        {
+          "at": 138,
+          "text": "Recognizing a broker's contribution and changing the organization's dependency on that broker are different management responses."
+        },
+        {
+          "at": 148,
+          "text": "For Northline, the next design question concerns whether coordination can be distributed across several positions without sacrificing the advantages of cross-boundary access."
+        },
+        {
+          "at": 159,
+          "text": "The communication content also allows a closer examination of what occurs around these interfaces."
         }
       ]
     },
@@ -517,51 +973,171 @@ window.TIMELINE = {
       "id": "content-layer",
       "label": "The content layer",
       "heading": "Content adds tone, style, and ideas to the working network.",
-      "duration": 399,
+      "duration": 445,
       "paragraphs": [
         {
           "at": 0,
-          "text": "The network here is the overloaded interface from the previous page: the twelve Implementation (Central) employees and twelve Service Operations employees with the most working ties across it, broker B, and five of B's other contacts. The ties are recurring working relationships. Each tie is now colored by the average tone of the synthetic messages exchanged along it over the twelve weeks, on a scale from −1 to +1."
+          "text": "We return to the overloaded interface connecting Implementation (Central) and Service Operations."
         },
         {
-          "at": 27,
-          "text": "Across Northline, 15,004 working ties have at least ten messages in the window and therefore enter this tone summary. Seventeen percent average below zero. Tone here is evaluative valence, not emotional intensity. Frequency and valence are almost unrelated in this synthetic system because I generated them that way: their correlation is 0.03, and 15 percent of ties in the busiest quarter also average below zero. The measurement lesson is that communication volume and evaluative direction are separate dimensions. Research on tie strength likewise treats frequency, duration, closeness, and related indicators as distinguishable properties. Research on negative ties gives adverse relationships their own substantive status rather than treating them as low-strength positive relationships."
+          "at": 8,
+          "text": "The graph contains twelve employees from each department with frequent cross-interface relationships, broker B, and five additional contacts. The ties represent recurring working relationships. Their colors now show average valence in the generated messages exchanged along them."
         },
         {
-          "at": 68,
-          "text": "A negative dyadic average can reflect several sources. For these synthetic messages, a simple sender/recipient/dyad decomposition across 22,999 directed pairs produces a 50 percent sender, 13 percent recipient, and 36 percent relationship-plus-noise split. The calculation uses sender and recipient averages as a teaching approximation. A full social relations model uses a richer statistical decomposition of person and dyad effects. The displayed shares also reflect the way the synthetic generator was constructed, and this simple estimator overstates recipient variation. The methodological question is the durable one: before interpreting dyadic valence as relationship quality, estimate how much systematic variation follows senders, recipients, and dyads, and account for residual measurement error."
+          "at": 24,
+          "text": "Across Northline, 15,004 working ties have at least ten messages during the observation window and enter the tone analysis."
         },
         {
-          "at": 108,
-          "text": "That distinction changes the diagnostic question. Two hundred thirty-one employees show a below-zero average with at least two-thirds of their regular communication partners, where a regular partner means five or more messages and the employee has at least five such partners. Another 76 write positively on average across partners and have exactly one below-zero dyadic relationship. The first is a cross-partner sender pattern that, in observed organizational data, could reflect role, workload, disposition, or other conditions. The second is localized to one dyad. Neither set should be reported as a named list. The useful output is how frequently these patterns occur and where they concentrate across teams and interfaces."
+          "at": 35,
+          "text": "Seventeen percent have average valence below zero."
         },
         {
-          "at": 149,
-          "text": "Audience changes what the layer shows. The 64 employees with working ties across the overloaded interface write privately to colleagues on the other side at an average tone of 0.08 in ordinary weeks and −0.18 in deadline weeks. Their own public channel posts move from 0.22 to 0.14. Elsewhere in Northline, private tone stays at 0.12 in both kinds of week, while public posts move from 0.22 to 0.20. This is a person-matched descriptive comparison across channels. The communicative acts still differ: private messages cross a particular interface, while public posts address a broader audience and may concern different subjects. Private messages also outnumber the public posts roughly seven to one, more expressive employees contribute more posts, and the tone measure must carry comparable meaning across channels. With those limits explicit, the synthetic result demonstrates how a public-channel summary can miss a pattern present in more private communication. That possibility increases both the measurement value and the governance burden of access."
+          "at": 41,
+          "text": "Message frequency and valence are almost unrelated in this synthetic system, with a correlation of 0.03. Fifteen percent of ties in the busiest quarter also average below zero."
         },
         {
-          "at": 206,
-          "text": "Aggregated by detected community, mean message valence ranges from 0.07 in a Release & Support community to 0.16 in a community centred on Data & Integration. These are descriptive averages of what members write. A community mean alone does not establish a shared group mood. Group affective tone requires evidence of sufficiently consistent affect within an actual group. The synthetic generator also contains no contagion process, so the differences shown here arise from the components built into the data rather than affect spreading between employees."
+          "at": 54,
+          "text": "The generator was designed to keep those dimensions largely separate. The example therefore distinguishes how often people communicate from the evaluative direction of their language."
         },
         {
-          "at": 239,
-          "text": "Dispositions are node properties in the synthetic generator. Every employee receives three latent values modeled loosely on extraversion, neuroticism, and conscientiousness, along with a noisy estimate standing in for a language-based measure. The estimates correlate between 0.38 and 0.40 with the latent values. Of the 800 employees the estimate places in the top quarter of the neuroticism-like disposition, 332 are actually in that quarter, compared with 200 expected by chance. The model therefore contains useful aggregate signal alongside substantial individual error. A real workplace measure would also need evidence that it transfers to workplace language and functions comparably across channels and employee groups. Aggregation can reduce some random error under suitable conditions. It cannot repair systematic bias or a non-equivalent measure. No person-level score should enter the diagnostic output here."
+          "at": 67,
+          "text": "A negative average for a relationship can reflect characteristics of the sender, the recipient, or the particular dyad."
         },
         {
-          "at": 286,
-          "text": "Language style matching is computed at the dyad level. In the synthetic data it rises from 0.75 for the weakest ties to 0.82 for the strongest and is higher within detected communities than across them, 0.81 against 0.78. Those associations follow from the generator: matching depends on tie strength and disposition similarity, and partner selection does not depend on style. One cross-sectional value therefore describes similarity at one moment. Longitudinal evidence would be needed to establish accommodation or convergence, while observed similarity could also arise because similar people select one another. Prior small-group research has associated language style matching with cohesion and, in some settings, task performance."
+          "at": 77,
+          "text": "A simple decomposition of 22,999 directed communication pairs assigns approximately 50 percent of the variation to sender patterns, 13 percent to recipients, and 36 percent to relationship-specific variation plus noise."
+        },
+        {
+          "at": 91,
+          "text": "This is a teaching approximation using sender and recipient averages, not a full social relations model. It also overstates recipient variation under the generating process."
+        },
+        {
+          "at": 103,
+          "text": "The distinction matters before interpreting negative language as evidence about one relationship."
+        },
+        {
+          "at": 111,
+          "text": "The generated data illustrate two different patterns."
+        },
+        {
+          "at": 117,
+          "text": "Two hundred thirty-one employees have below-zero average valence with at least two-thirds of their regular communication partners. Another 76 employees are positive on average across partners but have exactly one dyadic relationship with below-zero valence."
+        },
+        {
+          "at": 133,
+          "text": "The first pattern is distributed across a sender's relationships. The second is localized."
+        },
+        {
+          "at": 141,
+          "text": "In observed organizational data, a cross-partner pattern might reflect role, workload, communication style, or other conditions. A localized pattern could have different explanations."
+        },
+        {
+          "at": 153,
+          "text": "Neither justifies identifying employees through a managerial list of supposedly negative communicators. The research value lies in examining the distribution of these patterns across teams and organizational interfaces."
+        },
+        {
+          "at": 166,
+          "text": "The audience changes what the content layer shows."
+        },
+        {
+          "at": 173,
+          "text": "For 64 employees working across the overloaded interface, average valence in private messages to colleagues on the other side changes from 0.08 in ordinary weeks to −0.18 during deadlines."
+        },
+        {
+          "at": 187,
+          "text": "Their public-channel messages move from 0.22 to 0.14."
+        },
+        {
+          "at": 193,
+          "text": "Elsewhere in Northline, private-message valence remains at 0.12, while public-channel valence changes only from 0.22 to 0.20."
+        },
+        {
+          "at": 203,
+          "text": "The comparison follows the same employees across conditions, but private messages and public posts differ in audience, subject matter, and frequency. The private messages also outnumber public posts by approximately seven to one."
+        },
+        {
+          "at": 218,
+          "text": "These differences were generated deliberately. They demonstrate how a public-channel summary could fail to represent a pattern appearing in more private communication, while also illustrating why private content requires stronger justification and governance."
+        },
+        {
+          "at": 233,
+          "text": "Aggregating valence by detected community produces means ranging from 0.07 in Release & Support to 0.16 in Data & Integration."
+        },
+        {
+          "at": 244,
+          "text": "These values describe expressed language within groups defined by the network algorithm. They are not direct measurements of shared mood."
+        },
+        {
+          "at": 254,
+          "text": "The generator contains no emotional-contagion process. The variation arises from its assigned components, not affect transmitted between employees."
+        },
+        {
+          "at": 264,
+          "text": "The simulation also includes individual dispositions modeled loosely on extraversion, neuroticism, and conscientiousness, together with noisy language-based estimates."
+        },
+        {
+          "at": 274,
+          "text": "The estimates correlate approximately 0.38 to 0.40 with the underlying simulated dispositions."
+        },
+        {
+          "at": 282,
+          "text": "Among the 800 employees estimated to be in the highest quarter of the neuroticism-like measure, 332 are actually in that quarter. Random classification would identify approximately 200."
+        },
+        {
+          "at": 295,
+          "text": "The model therefore contains aggregate information alongside substantial individual error. It does not justify individual workplace personality classifications."
+        },
+        {
+          "at": 305,
+          "text": "Transferring such a measure to actual workplace communication would require evidence of validity across populations, roles, and channels. Aggregation may reduce random error, but it cannot remove systematic bias."
+        },
+        {
+          "at": 319,
+          "text": "Linguistic style matching supplies another kind of dyadic measurement."
         },
         {
           "at": 326,
-          "text": "Ideas form the last layer. Pipeline rebuilding is a rare topic across Northline, 0.3 percent of all topic mentions, yet it accounts for 3 percent of the mentions of Legacy A's 115 and Legacy B's 91 data-pipeline experts, concentrated among the members of their two separate Pipeline rebuild projects. In the topic network, that shared and otherwise rare topic links the two pools. In the working network they share one observed tie. Content shows that two groups are working on the same problem. Structure shows that they are not working on it together."
+          "text": "In Northline, matching increases from 0.75 among the weakest ties to 0.82 among the strongest. It is also higher within detected communities than across them, 0.81 compared with 0.78."
         },
         {
-          "at": 361,
-          "text": "These are engineered synthetic features, so their meaning is fixed by construction. In a real organization each would need validation for the population, language, and channel, and the purpose of collection would have to justify its intrusiveness. The diagnostic value is clearest at the level of ties, interfaces, and groups. Used that way, content shows what moves through the structure as well as where the structure is."
+          "at": 340,
+          "text": "These associations follow from the generator. Matching depends on tie strength and disposition similarity, while partner selection does not depend on style."
         },
         {
-          "at": 387,
-          "text": "The relational system can also distribute opportunities unevenly. The next Northline result asks who has access to informal contact in the first place."
+          "at": 351,
+          "text": "The observations therefore describe similarity, not evidence that one partner accommodated another over time. Testing convergence would require longitudinal measurement and an appropriate comparison."
+        },
+        {
+          "at": 363,
+          "text": "Topics provide a different view."
+        },
+        {
+          "at": 369,
+          "text": "Pipeline rebuilding accounts for only 0.3 percent of topic mentions across Northline. Among Legacy A's 115 and Legacy B's 91 data-pipeline experts, it accounts for three percent."
+        },
+        {
+          "at": 382,
+          "text": "The topic appears in both groups because they are conducting separate Pipeline rebuild projects."
+        },
+        {
+          "at": 390,
+          "text": "A person–topic network connects these populations through their shared subject. The working network shows only one observed tie between them."
+        },
+        {
+          "at": 401,
+          "text": "The two representations answer different questions. The content layer identifies overlapping work. The relational layer shows limited observed interaction between the people doing it."
+        },
+        {
+          "at": 413,
+          "text": "The general contribution is to study communication content in relation to the structure through which it moves."
+        },
+        {
+          "at": 423,
+          "text": "Each measure still requires an appropriate definition, validation, and governance standard. For this organizational problem, aggregate patterns across interfaces and groups are more defensible than person-level psychological scoring."
+        },
+        {
+          "at": 436,
+          "text": "We can now examine another consequence of organizational structure: differences in access to informal relationships."
         }
       ]
     },
@@ -569,43 +1145,91 @@ window.TIMELINE = {
       "id": "access",
       "label": "Access",
       "heading": "Unequal relational access can be observed before its mechanism is known.",
-      "duration": 192,
+      "duration": 206,
       "paragraphs": [
         {
           "at": 0,
-          "text": "The relation changes here. We are measuring informal working-session co-attendance: the number of distinct colleagues from other teams with whom an employee shared at least two informal work sessions, in person or by video, during the same twelve-week synthetic window."
+          "text": "This analysis measures informal working-session contact."
         },
         {
-          "at": 17,
-          "text": "The horizontal bins group employees by how many of those contacts they had. Fully remote employees average 2.8 distinct informal contacts. Office and hybrid employees average 6.4. The distributions show that the difference is broader than a few extreme individuals."
+          "at": 6,
+          "text": "A contact exists when an employee shares at least two informal work sessions, in person or by video, with a colleague from another team during Northline's twelve-week observation period."
         },
         {
-          "at": 35,
-          "text": "A raw group difference does not tell us why it exists. Northline's remote employees also differ from the comparison group in role level, tenure, team assignment, and project participation. The descriptive models therefore ask how the estimated gap changes as those observed characteristics enter."
+          "at": 20,
+          "text": "Fully remote employees average 2.8 such contacts. Office and hybrid employees average 6.4."
         },
         {
-          "at": 53,
-          "text": "Before adjustment, fully remote employees have 57 percent fewer of these contacts, measured against the office and hybrid average. With role and level included the gap is 41 percent. Adding tenure moves it to 38 percent. Adding department shifts it slightly back to 40 percent. Adding project participation brings it to 27 percent. The bootstrap intervals show uncertainty around each estimate."
+          "at": 28,
+          "text": "The distributions show that the difference extends beyond a few unusually connected individuals."
         },
         {
-          "at": 78,
-          "text": "This sequence is a sensitivity analysis to observed composition. It is not a decomposition of the causal mechanism. Work allocation, geography, onboarding, preference, meeting design, exclusion, and discrimination can all generate different relational patterns. The present model does not distinguish among them. Two cautions apply to the last step in particular. Project participation may be one of the routes through which remote work reduces contact, in which case adjusting for it removes part of the effect being studied rather than a confounder. And the size of each step depends on the order in which the variables enter."
+          "at": 36,
+          "text": "Remote employees also differ in other characteristics, including role level, tenure, team, and project participation."
         },
         {
-          "at": 114,
-          "text": "Network research has a related identification problem. Similar people may form ties because of homophily or selection. Existing relationships may also make connected people more similar over time. Shared environments and opportunity structures can produce both. Observed network similarity therefore rarely identifies influence on its own."
+          "at": 45,
+          "text": "I therefore examine how the estimated group difference changes as these characteristics enter the model."
+        },
+        {
+          "at": 54,
+          "text": "The unadjusted comparison shows 57 percent fewer contacts among fully remote employees."
+        },
+        {
+          "at": 62,
+          "text": "Adjusting for role and level reduces the difference to 41 percent. Adding tenure reduces it to 38 percent. Adding department changes it to 40 percent. Adding project participation reduces it to 27 percent."
+        },
+        {
+          "at": 77,
+          "text": "The bootstrap intervals show uncertainty around the estimates."
+        },
+        {
+          "at": 84,
+          "text": "These adjustments describe sensitivity to observed composition. They do not identify the cause of the difference."
+        },
+        {
+          "at": 93,
+          "text": "Project participation may itself be affected by work arrangement. If so, adjusting for it could remove part of the process of interest rather than merely control a confounder."
+        },
+        {
+          "at": 107,
+          "text": "The sequence also depends on the order in which variables are introduced."
+        },
+        {
+          "at": 115,
+          "text": "Other possible explanations include geography, assignment practices, onboarding, meeting design, employee preferences, and exclusion. The present analysis cannot distinguish them."
+        },
+        {
+          "at": 125,
+          "text": "Network research encounters a related problem when interpreting similarity between connected people."
         },
         {
           "at": 133,
-          "text": "The contribution of the network measure is narrower and useful. Northline's head count tells us how many employees work remotely. The relational layer shows that those employees occupy different positions in one form of informal access. That pattern warrants investigation before anyone assigns a mechanism to it."
+          "text": "People may select others who resemble them. Relationships may also influence people after those ties form. Shared environments can produce similarity without either process being the primary cause."
         },
         {
-          "at": 153,
-          "text": "For a People Science team, that distinction changes the next step. The object to investigate is opportunity structure: who is assigned to cross-team work, how recurring meetings are designed, how people are onboarded, which managers create cross-boundary contact, and which employees gain access to consequential projects. Remote status identifies the group comparison in this synthetic result. The intervention target should follow from the mechanism that subsequent evidence supports."
+          "at": 147,
+          "text": "Observed network patterns do not generally distinguish these mechanisms by themselves."
         },
         {
-          "at": 180,
-          "text": "So far, most Northline results have used one twelve-week window. Organizational relationships have histories, and that history can change what a current network means."
+          "at": 154,
+          "text": "Northline's work-arrangement measure identifies a population difference in one form of informal relational access."
+        },
+        {
+          "at": 163,
+          "text": "That finding is useful without yet assigning a cause."
+        },
+        {
+          "at": 170,
+          "text": "The next investigation should examine how employees enter cross-team projects, how recurring meetings are formed, what contact opportunities managers create, and whether access differs within comparable work conditions."
+        },
+        {
+          "at": 183,
+          "text": "The intervention should follow the explanation supported by that subsequent evidence, rather than remote status alone."
+        },
+        {
+          "at": 193,
+          "text": "So far, most of our networks have described one observation period. Relationships also change over time, and those changes can alter the meaning of a current position."
         }
       ]
     },
@@ -613,35 +1237,67 @@ window.TIMELINE = {
       "id": "dynamics",
       "label": "Dynamics",
       "heading": "Organizational networks are processes as well as snapshots.",
-      "duration": 137,
+      "duration": 159,
       "paragraphs": [
         {
           "at": 0,
-          "text": "For the synthetic case, I generated four historical Northline states. These are model-generated snapshots used to make longitudinal reasoning concrete. They are not observed records from a real company's past."
+          "text": "I generated four historical states for Northline to demonstrate longitudinal analysis."
         },
         {
-          "at": 14,
-          "text": "The same unit positions remain fixed so changes in relationships are easy to follow. The 2021 state predates the acquisitions. Legacy A enters in 2022. Legacy B and hybrid work enter by 2024. Program Atlas grows across the later periods."
+          "at": 8,
+          "text": "They are synthetic histories, not records of an actual organization's development."
         },
         {
-          "at": 31,
-          "text": "Legacy A gradually forms more working ties with core Northline units. Its share of working ties reaching the core rises from 1 percent to 4 percent and then to 10 percent. Legacy B changes more slowly, moving from 12 percent to 15 percent between 2024 and the current window."
+          "at": 15,
+          "text": "The 2021 state precedes Northline's acquisitions. Legacy A enters in 2022. Legacy B and hybrid work arrangements appear by 2024. Program Atlas expands over the later periods."
         },
         {
-          "at": 52,
-          "text": "Broker B changes too. Before the acquisitions, B is at the 46th percentile of cross-function brokerage. In the current synthetic network, B reaches the 100th percentile. Program Atlas grows from a small cross-department structure into part of ordinary coordination."
+          "at": 28,
+          "text": "The same organizational positions remain fixed on screen so that changes in ties are easier to see."
         },
         {
-          "at": 69,
-          "text": "A snapshot compresses several relational processes into one picture. Ties form, persist, decay, and are replaced. The same aggregate density can therefore conceal very different amounts of churn in who is actually connected to whom. Organizational network research has found that apparently stable structures can coexist with rapid turnover in particular bridges and relationships. Existing ties also shape future opportunity by influencing who meets, which projects form, and which connections are easiest to maintain. That cumulative dependence is one form of path dependence."
+          "at": 38,
+          "text": "Legacy A gradually establishes more working relationships with core Northline units. The proportion of its working ties reaching the core increases from one percent to four percent and then to ten percent."
         },
         {
-          "at": 100,
-          "text": "Those trajectories change how today's graph should be interpreted. A group that currently looks isolated may be integrating quickly. A newly central employee may be carrying a temporary project or becoming a persistent coordination dependency. A weak interface may simply be young."
+          "at": 53,
+          "text": "Legacy B changes more slowly, moving from twelve to fifteen percent between 2024 and the current period."
         },
         {
-          "at": 118,
-          "text": "Northline is considering structural change while its relationships are already evolving. We can now return to the proposed reorganization and ask what the new formal boundaries would do to today's measured working system."
+          "at": 62,
+          "text": "Broker B also changes position."
+        },
+        {
+          "at": 68,
+          "text": "Before the acquisitions, B is at the 46th percentile of cross-functional brokerage. In the current network, B reaches the 100th percentile."
+        },
+        {
+          "at": 79,
+          "text": "Program Atlas develops from a small cross-department project into part of the organization's regular coordination structure."
+        },
+        {
+          "at": 88,
+          "text": "These histories demonstrate why a network snapshot can be misleading when interpreted without temporal context."
+        },
+        {
+          "at": 97,
+          "text": "The same density can coexist with substantial turnover in particular relationships. Some ties are newly formed, others have persisted, and some may be disappearing."
+        },
+        {
+          "at": 109,
+          "text": "Earlier connections also affect future opportunities. People tend to encounter collaborators through existing work, and established routes can influence where new projects and dependencies form."
+        },
+        {
+          "at": 122,
+          "text": "A weakly connected group may be integrating rapidly. A highly central employee may be temporarily coordinating a project or becoming a persistent organizational dependency."
+        },
+        {
+          "at": 134,
+          "text": "Those interpretations require information about the trajectory, not just the current statistic."
+        },
+        {
+          "at": 142,
+          "text": "Northline's proposed reorganization would intervene in a relational system that is already changing. We can now examine how the new formal structure would intersect with today's working relationships."
         }
       ]
     },
@@ -649,43 +1305,79 @@ window.TIMELINE = {
       "id": "reorg",
       "label": "Reorganization",
       "heading": "A reorganization changes opportunity around an existing relational system.",
-      "duration": 158,
+      "duration": 172,
       "paragraphs": [
         {
           "at": 0,
-          "text": "The network here is the same 302-team working network introduced when we compared Northline's org chart with its relational structure. Each circle is one formal team. Today's measured relationships are held fixed while the proposed three-business-line scenario is applied to them."
+          "text": "Leadership proposes organizing Northline into three business lines: Enterprise Solutions, Platform & Data, and Managed Services."
         },
         {
-          "at": 18,
-          "text": "The three-line mapping is an input to the synthetic scenario. It specifies which departments and teams would move into Enterprise Solutions, Platform & Data, and Managed Services. The following values therefore describe structural exposure under this particular proposal."
+          "at": 9,
+          "text": "The screen returns to the same 302-team working network used earlier."
         },
         {
-          "at": 34,
-          "text": "Existing working ties are then reclassified according to the proposal. Some relationships that currently cross formal boundaries would become internal to one new line. Other relationships that currently lie inside a department would be divided by the proposed design."
+          "at": 17,
+          "text": "I hold existing working ties fixed and apply the proposed allocation of departments and teams to the new business lines."
         },
         {
-          "at": 51,
-          "text": "Three quantities summarize that exposure. The proposal would newly contain 907 existing cross-boundary working ties. It would split 191 ties that currently sit within one department. Thirteen of the 31 leading brokers outside the corporate functions would still have at least 30 percent of their working relationships crossing the new business-line boundaries."
+          "at": 28,
+          "text": "The allocation is a specified scenario, not a prediction of how relationships would change after implementation."
         },
         {
-          "at": 73,
-          "text": "That is a mixed structural result. The new design would bring many frequent collaborators under common formal ownership and would also preserve substantial demand for coordination across the new lines."
+          "at": 37,
+          "text": "Some currently cross-boundary working relationships would become internal to a business line. Other relationships currently contained within a department would be divided across the new structure."
         },
         {
-          "at": 87,
-          "text": "Earlier dependencies remain visible inside the proposal. Specialist S and broker B still occupy bridging positions. Legacy A and Legacy B would sit inside the same business line, yet the relevant expert populations currently share only one observed working tie. Formal proximity can expand opportunity for interaction. The relationship still has to form."
+          "at": 50,
+          "text": "Three quantities summarize the result."
         },
         {
-          "at": 108,
-          "text": "This is a structural exposure analysis. It tells leadership which existing interfaces the proposal contains, divides, or continues to rely on. Employee behavior after the reorganization remains a future outcome."
+          "at": 55,
+          "text": "The proposal would bring 907 existing cross-boundary working ties inside the new business lines."
         },
         {
-          "at": 122,
-          "text": "Formal redesign also changes the opportunity structure in which future relationships form. Reporting relationships affect repeated contact, meetings, resource ownership, managerial attention, and task interdependence. The present graph therefore gives leadership a map of structural exposure at the moment of change. Post-reorganization measurement would be needed to learn which relationships persist, decay, or form under the new design."
+          "at": 64,
+          "text": "It would divide 191 ties currently contained within departments."
         },
         {
-          "at": 146,
-          "text": "The network therefore changes the management question. Leadership can evaluate a large redesign while also asking whether smaller structural problems can be addressed more directly."
+          "at": 71,
+          "text": "Thirteen of the 31 leading brokers outside corporate functions would still have at least thirty percent of their working relationships crossing the new business-line boundaries."
+        },
+        {
+          "at": 83,
+          "text": "The proposal therefore aligns some existing collaboration with formal ownership while leaving substantial cross-line coordination in place."
+        },
+        {
+          "at": 93,
+          "text": "The earlier expertise problems also remain visible."
+        },
+        {
+          "at": 99,
+          "text": "Specialist S and broker B retain structurally important positions. Legacy A and Legacy B would belong to the same business line, but their data-pipeline experts currently share only one observed working tie."
+        },
+        {
+          "at": 114,
+          "text": "Formal proximity can change opportunities for interaction. It does not create the relationship by itself."
+        },
+        {
+          "at": 123,
+          "text": "These figures describe structural exposure: which existing relationships would be contained, divided, or left crossing the proposed boundaries."
+        },
+        {
+          "at": 133,
+          "text": "They do not measure the behavioral consequences of reorganization."
+        },
+        {
+          "at": 140,
+          "text": "New formal arrangements can change repeated contact, managerial attention, resource ownership, and task interdependence."
+        },
+        {
+          "at": 149,
+          "text": "Subsequent network measurement would be needed to determine which existing relationships persist and which new relationships form after the change."
+        },
+        {
+          "at": 159,
+          "text": "The analysis also raises a practical alternative. Some of Northline's problems concern a small number of identifiable dependencies that could be addressed without reorganizing the entire company."
         }
       ]
     },
@@ -693,39 +1385,83 @@ window.TIMELINE = {
       "id": "interventions",
       "label": "Interventions",
       "heading": "Structural diagnosis creates smaller hypotheses that can be tested.",
-      "duration": 141,
+      "duration": 166,
       "paragraphs": [
         {
           "at": 0,
-          "text": "The three changes shown here correspond to three mechanisms already identified in Northline. Each modifies one local part of the synthetic network so that the structural hypothesis is explicit."
+          "text": "The three interventions shown here address different structural problems."
         },
         {
-          "at": 14,
-          "text": "The first targets fragility around specialist S. Three colleagues already working with the affected programs receive the Settlement engine capability through cross-training. That creates additional expertise sources. Under the structural counterfactual, broad two-step access to the domain survives the removal of S."
+          "at": 7,
+          "text": "Each changes a defined part of Northline's synthetic network and recalculates the corresponding measure."
         },
         {
-          "at": 32,
-          "text": "The second targets overload around broker B. Four coordinators form an interface team and absorb part of B's cross-functional contact load. B's share of cross-function shortest paths falls from 3.08 percent to 2.05 percent. The structural hypothesis is that coordination capacity can be distributed across several positions."
+          "at": 16,
+          "text": "The first addresses dependency on specialist S."
         },
         {
-          "at": 51,
-          "text": "The third targets weak access between Legacy A and Legacy B data experts. A recurring forum adds ten working ties between the two expertise populations. Their typical network distance falls from 6 to 4.6 steps. The structural hypothesis concerns repeated opportunity for cross-boundary contact."
+          "at": 22,
+          "text": "Three colleagues already working on affected programs receive cross-training in the Settlement engine capability. The added expertise sources preserve broad two-step access to the domain after S is removed."
         },
         {
-          "at": 70,
-          "text": "Valente's network-intervention framework distinguishes strategies that work through particular individuals, segment groups, induce peer processes, or alter network structure directly. Northline's examples are deliberately mechanism-specific: they add expertise redundancy, redistribute an interface, and create repeated cross-boundary opportunity. The framework is useful because it forces an intervention to specify which relational process it intends to change."
+          "at": 36,
+          "text": "The proposed mechanism is redundancy in access to scarce knowledge."
         },
         {
-          "at": 92,
-          "text": "These three Northline changes therefore make different predictions. Cross-training changes redundancy. The interface team changes dependency concentration. The recurring forum changes access. The synthetic graph tells us whether the intended structural quantity moved under the imposed change."
+          "at": 43,
+          "text": "The second addresses concentration around broker B."
         },
         {
-          "at": 109,
-          "text": "An organizational pilot would ask the more important practical question: do outcomes change? Access to expertise, response time, delivery quality, workload, and employee experience all belong in that evaluation. A phased implementation, comparison interface, matched design, randomization, or another credible strategy would be needed to estimate effects."
+          "at": 49,
+          "text": "Four coordinators form an interface team and take on some cross-functional connections. B's share of cross-functional shortest paths falls from 3.08 to 2.05 percent."
         },
         {
-          "at": 128,
-          "text": "Network analysis has now taken us from measurement to diagnosis to intervention hypotheses. The remaining question is how far each kind of evidence can travel."
+          "at": 61,
+          "text": "The proposed mechanism is redistribution of coordination routes."
+        },
+        {
+          "at": 68,
+          "text": "The third addresses the separation between Legacy A and Legacy B data experts."
+        },
+        {
+          "at": 76,
+          "text": "A recurring forum adds ten working ties between the populations. Their typical network distance falls from six to 4.6 steps."
+        },
+        {
+          "at": 87,
+          "text": "The proposed mechanism is increased opportunity for cross-boundary contact."
+        },
+        {
+          "at": 94,
+          "text": "Valente's network-intervention framework distinguishes interventions targeting individuals, groups, peer processes, and network structure."
+        },
+        {
+          "at": 102,
+          "text": "The Northline examples operate principally through changes to expertise distribution and relational opportunity."
+        },
+        {
+          "at": 111,
+          "text": "They specify different mechanisms and therefore require different outcome measures."
+        },
+        {
+          "at": 118,
+          "text": "The structural calculations confirm that the imposed changes move the intended network quantities."
+        },
+        {
+          "at": 126,
+          "text": "They do not establish that the interventions would improve organizational outcomes."
+        },
+        {
+          "at": 134,
+          "text": "A pilot would need to measure the relevant consequences: access to expertise, response time, delivery quality, coordination load, and employee experience."
+        },
+        {
+          "at": 145,
+          "text": "A phased rollout, comparison groups, randomization, or another credible design could help distinguish intervention effects from changes occurring independently."
+        },
+        {
+          "at": 155,
+          "text": "Network analysis has identified where a change might operate. Evaluation would determine whether the change produces the intended practical result."
         }
       ]
     },
@@ -733,39 +1469,83 @@ window.TIMELINE = {
       "id": "evidence",
       "label": "Evidence",
       "heading": "Different claims require different research designs.",
-      "duration": 161,
+      "duration": 179,
       "paragraphs": [
         {
           "at": 0,
-          "text": "The ladder organizes claims we have already made about Northline. Each rung adds an evidentiary requirement."
+          "text": "The examples from Northline support several kinds of inference, each with distinct requirements."
         },
         {
-          "at": 9,
-          "text": "At the first level is description. With a defined relation, population boundary, time window, and missing-data account, we can describe the measured graph. Legacy A and Legacy B expert populations share one observed working tie. B occupies a high-brokerage position. A measured community crosses several functions."
+          "at": 8,
+          "text": "Description begins with a measured network."
         },
         {
-          "at": 29,
-          "text": "A structural counterfactual changes the measured graph and recalculates it. Removing S and recomputing reachability tells us exactly what happens to the network representation under that deletion. Adding cross-training relationships tells us how access changes under an imposed addition. These conclusions remain conditional on the graph we measured."
+          "at": 14,
+          "text": "Under specified boundaries and tie definitions, we can report that Legacy A and Legacy B experts share one working tie, that B occupies a high-brokerage position, or that a detected community crosses several functions."
         },
         {
-          "at": 49,
-          "text": "Prediction adds time and a later outcome. A claim that teams with a particular network structure will have slower delivery next quarter requires repeated measurement and future delivery outcomes."
+          "at": 30,
+          "text": "A structural counterfactual changes that representation and recalculates it."
+        },
+        {
+          "at": 37,
+          "text": "Removing S establishes how reachability changes in the specified graph. Adding expertise holders establishes how access changes under the imposed modification."
+        },
+        {
+          "at": 48,
+          "text": "These are exact calculations about the constructed network under the stated conditions."
+        },
+        {
+          "at": 56,
+          "text": "Prediction requires information about a later outcome."
         },
         {
           "at": 62,
-          "text": "Intervention adds deliberate change and a credible comparison. A claim that an interface team reduces coordination delay requires implementation and an appropriate counterfactual, perhaps through randomization, matched interfaces, phased rollout, or another defensible design."
+          "text": "A claim that highly concentrated brokerage predicts slower delivery next quarter requires repeated measurements and future delivery observations."
         },
         {
-          "at": 78,
-          "text": "Networks complicate causal inference in several ways. Selection can make connected people similar before any influence occurs, and relationships can then transmit influence after a tie exists. Interference creates another problem because changing one employee's treatment can alter another employee's exposure through the network. An intervention assigned to one team may therefore affect neighboring teams as work and information cross the nominal treatment boundary. A causal design has to define those exposure pathways explicitly. Statistical network models address a related set of questions about how network structure forms and changes. Exponential random graph models represent dependencies among ties and network configurations. Stochastic actor-oriented models use repeated network observations to model changes in ties and actor attributes and can help study selection and influence under their assumptions. Those models answer different inferential questions from a treatment-effect design with interference."
+          "at": 72,
+          "text": "An intervention claim requires a credible comparison after a deliberate change."
         },
         {
-          "at": 128,
-          "text": "Northline's current synthetic analysis lives mainly on the first two rungs. We describe a generated relational system and calculate counterfactual changes to that system. We also generate intervention hypotheses. Evidence about organizational effects begins when those hypotheses encounter observed outcomes under an appropriate design."
+          "at": 80,
+          "text": "Establishing that an interface team reduces coordination delays would require observing what happens under the intervention relative to an appropriate alternative."
         },
         {
-          "at": 146,
-          "text": "This distinction matters because network diagrams are unusually persuasive. A cluster, highlighted broker, or broken path can look explanatory as soon as it appears. The research design determines what the picture actually establishes."
+          "at": 91,
+          "text": "Networked settings complicate causal inference because relationships affect exposure."
+        },
+        {
+          "at": 98,
+          "text": "Employees may form ties with similar colleagues before any influence occurs. They may also influence one another through existing relationships."
+        },
+        {
+          "at": 108,
+          "text": "Treatment can spread beyond the people or teams initially assigned to receive it. If one team's coordination practices change, neighboring teams may experience the consequences."
+        },
+        {
+          "at": 121,
+          "text": "A causal design must account for these pathways."
+        },
+        {
+          "at": 127,
+          "text": "Statistical network models address related but different questions. Exponential random graph models represent dependencies among ties and configurations. Stochastic actor-oriented models use repeated networks to investigate changes in relationships and actor attributes under their assumptions."
+        },
+        {
+          "at": 143,
+          "text": "Those analyses are distinct from estimating the effect of a particular organizational intervention."
+        },
+        {
+          "at": 151,
+          "text": "Northline's synthetic results occupy primarily the descriptive and structural-counterfactual levels. They also generate intervention hypotheses."
+        },
+        {
+          "at": 160,
+          "text": "Claims about actual organizational effects require further evidence."
+        },
+        {
+          "at": 167,
+          "text": "Network diagrams can make a pattern appear explanatory before its mechanism has been established. The research design determines which conclusions the pattern supports."
         }
       ]
     },
@@ -773,43 +1553,99 @@ window.TIMELINE = {
       "id": "privacy",
       "label": "Privacy",
       "heading": "A relational record can expose people who never supplied it.",
-      "duration": 189,
+      "duration": 224,
       "paragraphs": [
         {
           "at": 0,
-          "text": "The first example shows one synthetic Northline survey respondent naming three colleagues as advice contacts. Those three colleagues did not answer the survey. Their relational presence still enters the dataset because another employee described a relationship with them."
+          "text": "The first example shows a survey respondent naming three colleagues as advice contacts."
         },
         {
-          "at": 17,
-          "text": "Across the synthetic survey, 907 of Northline's 1,015 nonrespondents appear somewhere in the advice network through other people's nominations. Relational data therefore implicate more people than the set of direct participants."
+          "at": 8,
+          "text": "Those colleagues did not complete the survey, but they enter the network through another person's report."
         },
         {
-          "at": 31,
-          "text": "This is a third-party disclosure problem. One person's response can reveal another person's relationship or structural position even when that second person never contributes data directly. In organizational network research, confidentiality therefore attaches to the relational record as well as to the respondent."
+          "at": 18,
+          "text": "Across Northline, 907 of the 1,015 survey nonrespondents appear in the advice network through nominations made by other employees."
         },
         {
-          "at": 49,
-          "text": "Removing names does not eliminate the problem. Structural positions can themselves be identifying. The only bridge to a rare domain, an isolated specialist, or an unusual combination of department and tie count may be recognizable to people who know the organization. In Northline, 166 employees have a department-plus-tie-count combination shared by nobody else."
+          "at": 28,
+          "text": "The population represented in relational data therefore extends beyond the people who directly provided responses."
         },
         {
-          "at": 71,
-          "text": "This is one reason network research needs governance designed around relationships. Collect the minimum data the question requires. Separate research access from routine managerial access. Suppress outputs that reveal distinctive individuals or small groups. Restrict any re-identification mechanism to tightly controlled research functions. Tell employees what is collected and why, and involve their representatives in the design."
+          "at": 37,
+          "text": "One employee can disclose information about another employee's relationships or network position."
         },
         {
-          "at": 94,
-          "text": "Message content raises additional obligations. Where content is collected for topic, sentiment, affect, uncertainty, or semantic analysis, the research purpose and access authority should be explicit. Collection should be proportional to the question, raw text access should be restricted, retention should be limited, and reporting should avoid exposing identifiable language. Metadata can reduce the amount of content collected and still carries substantial relational privacy risk. Derived inferences carry their own risk. Person-level tone, style, or personality estimates are new information about people that none of them supplied, and summaries of small groups can expose individuals. Measuring messages can also change how people write."
+          "at": 45,
+          "text": "Confidentiality must consequently address the relational record, not only the identity of the person answering the question."
         },
         {
-          "at": 132,
-          "text": "Purpose limitation matters because the same technical capability can support very different organizational uses. This walkthrough uses relational data to diagnose systems: teams, interfaces, expertise access, and dependency. Individual leaderboards, flight-risk scoring, disciplinary surveillance, and covert monitoring are uses I would exclude at the design stage. They change what the data mean, they invite people to write and connect differently once they know they are scored, and they erode the trust that relational measurement depends on."
+          "at": 55,
+          "text": "Removing names is insufficient when unusual network positions remain recognizable."
         },
         {
-          "at": 162,
-          "text": "Privacy therefore changes the analytic design itself. It affects which data can be collected, who appears in the graph, how complete the network can become, and what outputs can responsibly be returned."
+          "at": 62,
+          "text": "A rare specialist, the only connection to a particular domain, or an unusual combination of department and tie count may be identifiable to people familiar with the organization."
         },
         {
-          "at": 176,
-          "text": "A new class of organizational intermediary makes these questions even more interesting. Employees increasingly reach information and expertise through AI systems as well as through colleagues."
+          "at": 75,
+          "text": "In the synthetic Northline network, 166 employees have a department-and-tie-count combination shared by nobody else."
+        },
+        {
+          "at": 84,
+          "text": "Governance should begin with the research purpose."
+        },
+        {
+          "at": 91,
+          "text": "Collect the minimum relational data necessary. Separate research access from managerial access. Limit identifiable outputs, protect any re-identification mechanism, and define retention and reporting rules before collection."
+        },
+        {
+          "at": 104,
+          "text": "Employees should understand what is being measured and how it may be used. Their representatives should have an appropriate role in developing those arrangements."
+        },
+        {
+          "at": 116,
+          "text": "Message content creates additional risks."
+        },
+        {
+          "at": 121,
+          "text": "Text can reveal personal circumstances, opinions, relationships, or recognizable language. Derived tone, style, and personality estimates create new information about individuals even when that information was never directly requested."
+        },
+        {
+          "at": 135,
+          "text": "The appropriate response includes restricted access, purpose limitation, defensible retention, and suppression of identifiable reporting."
+        },
+        {
+          "at": 144,
+          "text": "Metadata also remain sensitive. They can reveal patterns of association even without message content."
+        },
+        {
+          "at": 153,
+          "text": "Measurement can further change behavior when employees know their communication is being evaluated. That effect is part of the research setting, not merely a privacy consideration."
+        },
+        {
+          "at": 165,
+          "text": "The distinction between system diagnosis and individual surveillance is consequential."
+        },
+        {
+          "at": 173,
+          "text": "This walkthrough uses networks to examine teams, interfaces, expertise access, and organizational dependencies."
+        },
+        {
+          "at": 181,
+          "text": "Individual leaderboards, covert monitoring, disciplinary profiling, and flight-risk scoring would require different justifications and would not be included in this research design."
+        },
+        {
+          "at": 192,
+          "text": "Those uses can change how employees communicate and undermine the trust required for relational research."
+        },
+        {
+          "at": 201,
+          "text": "Privacy therefore affects what can be measured, who enters the network, which relationships remain observable, and what conclusions can responsibly be returned."
+        },
+        {
+          "at": 213,
+          "text": "A further change to organizational relationships is emerging as employees increasingly reach information through AI systems rather than directly through colleagues."
         }
       ]
     },
@@ -817,39 +1653,91 @@ window.TIMELINE = {
       "id": "human-ai",
       "label": "Human–AI networks",
       "heading": "AI systems can change the path between people and knowledge without changing the org chart.",
-      "duration": 149,
+      "duration": 194,
       "paragraphs": [
         {
           "at": 0,
-          "text": "The first network is a selected synthetic Northline expertise-seeking slice. The circles are employees, and the dashed ties represent expertise-seeking relationships among them."
+          "text": "This example uses a selected Northline expertise-seeking network."
         },
         {
-          "at": 12,
-          "text": "The second state adds a shared enterprise assistant in an explicitly illustrative scenario. Forty percent of expertise-seeking ties are routed through that assistant. Under the imposed scenario, 49.9 percent of shortest expertise paths pass through the assistant, compared with 6.2 percent for the most central colleague beforehand."
+          "at": 7,
+          "text": "The initial graph contains employees and the relationships through which they seek knowledge from one another."
         },
         {
-          "at": 31,
-          "text": "Those values are properties of the synthetic scenario. They are not estimates of how enterprise AI systems typically affect organizations."
+          "at": 16,
+          "text": "I then introduce a shared enterprise assistant in an illustrative synthetic scenario."
         },
         {
-          "at": 42,
-          "text": "The 49.9 percent result follows the same centrality discipline we used for Employees A and B. The assistant is central in this imposed expertise-seeking network because the scenario routes many expertise paths through it. A trust, authority, collaboration, or workflow network could give the same technical system a different position. The AI layer is therefore another relation in the organization's multiplex system, and the meaning of its centrality comes from the process being measured."
+          "at": 24,
+          "text": "Forty percent of expertise-seeking ties are routed through the assistant. Under that imposed arrangement, 49.9 percent of shortest expertise paths pass through it."
         },
         {
-          "at": 71,
-          "text": "The structural point is the interesting one. Northline's reporting lines remain fixed while the path between people and knowledge changes. A shared assistant can centralize access, create redundancy, become a bottleneck, or propagate common information and common error depending on what it can reach and how people rely on it."
+          "at": 36,
+          "text": "Before the change, the most central employee occupied 6.2 percent of those paths."
         },
         {
-          "at": 91,
-          "text": "That makes the organization a socio-technical network. Some nodes are people. Others may be systems that search, summarize, route, recommend, or synthesize information. Familiar network questions about centralization, access, dependency, provenance, and resilience then apply to a broader information architecture."
+          "at": 44,
+          "text": "These are properties of the constructed scenario, not empirical estimates of how enterprise AI assistants generally affect organizations."
         },
         {
-          "at": 109,
-          "text": "The five small diagrams show classic communication structures: centralized, chain, circle, fully connected, and lattice-like. In systems of language-model agents, communication paths can be imposed directly while holding the task and model family fixed. That makes topology experimentally tractable in a way human organizational structure rarely is."
+          "at": 54,
+          "text": "The interpretation follows the same principles used for employee centrality."
         },
         {
-          "at": 128,
-          "text": "Whether the same topology effects govern human-AI organizations is an empirical question. Human organizations contain authority, identity, incentives, memory, adaptation, strategic behavior, and history. AI adds another layer to those processes. The network perspective gives us a disciplined way to ask what new dependencies and opportunities that layer creates."
+          "at": 61,
+          "text": "The assistant becomes central because the scenario places it on many expertise-seeking routes. Its position would differ in a network measuring authority, trust, task assignment, or some other relation."
+        },
+        {
+          "at": 75,
+          "text": "The relevant object remains the defined relationship and the process carried through it."
+        },
+        {
+          "at": 83,
+          "text": "The structural implication is that the org chart can remain unchanged while access to information becomes reorganized."
+        },
+        {
+          "at": 93,
+          "text": "A shared assistant may increase access, provide redundancy, concentrate dependency, or distribute the same information and errors across users."
+        },
+        {
+          "at": 103,
+          "text": "Which outcome occurs depends on what the system can retrieve, how it processes information, and how employees use it."
+        },
+        {
+          "at": 114,
+          "text": "Organizational networks can therefore include human and technical intermediaries."
+        },
+        {
+          "at": 121,
+          "text": "Some connect people directly. Others search, summarize, route, recommend, or synthesize information on their behalf."
+        },
+        {
+          "at": 130,
+          "text": "Questions about brokerage, provenance, dependency, and resilience then extend to the combined system."
+        },
+        {
+          "at": 138,
+          "text": "The diagrams show several communication structures: centralized, chain, circle, fully connected, and lattice-like."
+        },
+        {
+          "at": 146,
+          "text": "In experiments with interacting language-model agents, these structures can be imposed while holding models, tasks, and information conditions relatively stable."
+        },
+        {
+          "at": 157,
+          "text": "This makes it possible to examine how communication architecture affects information integration and system behavior."
+        },
+        {
+          "at": 166,
+          "text": "Human organizations involve additional processes, including authority, incentives, social identity, memory, and adaptation."
+        },
+        {
+          "at": 174,
+          "text": "We should not assume that results from networks of machine agents transfer directly to organizations containing people."
+        },
+        {
+          "at": 184,
+          "text": "The network perspective provides a common way of specifying the structural question while leaving the empirical comparison open."
         }
       ]
     },
@@ -857,35 +1745,91 @@ window.TIMELINE = {
       "id": "close",
       "label": "Close",
       "heading": "See the relational system before changing the formal one.",
-      "duration": 144,
+      "duration": 202,
       "paragraphs": [
         {
           "at": 0,
-          "text": "Return to the Northline org chart. The company began with three visible symptoms: slowing cross-functional delivery, difficulty finding expertise, and heavy coordination loads. Leadership was also considering a reorganization into three end-to-end business lines."
+          "text": "Northline began with three organizational symptoms: slow cross-functional delivery, difficulty finding expertise, and concentrated coordination work."
         },
         {
-          "at": 15,
-          "text": "The relational analysis changed what those symptoms mean. Some communities already cross functions. A small number of brokers carry disproportionate coordination load. Rare expertise sits behind a limited number of paths. Legacy expertise pools remain weakly connected. Fully remote employees have weaker access in one informal-contact layer, with the mechanisms still unresolved."
+          "at": 9,
+          "text": "Leadership proposed reorganizing the company into three business lines."
         },
         {
-          "at": 37,
-          "text": "Those are different organizational problems, and they suggest different responses. Northline can create redundant expertise paths around S. It can distribute B's integration load. It can strengthen specific cross-boundary interfaces between legacy expertise pools. It can investigate relational-access differences before assigning them a cause. It can test structural interventions prospectively."
+          "at": 16,
+          "text": "The relational analysis separated several problems that the org chart alone could not distinguish."
         },
         {
-          "at": 57,
-          "text": "The proposed reorganization can still be evaluated on its own structural terms. Under the synthetic scenario, 907 existing cross-boundary ties would become contained within the new lines, 191 currently internal ties would be split, and 13 of the 31 leading brokers would remain heavily cross-boundary. The proposal therefore aligns some existing collaboration while leaving other dependencies in place. Measured against the three symptoms, the redesign addresses part of the first by bringing frequent collaborators under common ownership. It leaves the second largely untouched, because rare expertise still sits behind a few paths. And it keeps much of the third in place, because many brokers would still carry work across the new boundaries."
+          "at": 25,
+          "text": "Some working communities already cross formal functions. Others remain divided within departments or along acquisition boundaries."
         },
         {
-          "at": 99,
-          "text": "Formal structure tells leadership where authority, resources, and responsibility are assigned. Relational structure tells us how people currently reach one another, combine knowledge, and carry work through those formal arrangements."
+          "at": 34,
+          "text": "A small number of brokers carry substantial intermediary work. Rare expertise depends on limited access paths. Legacy expertise pools perform similar work with little observed contact."
         },
         {
-          "at": 113,
-          "text": "That is the broader reason I use networks. Relationships are part of the system we are trying to understand. Once they become measurable, organizational problems that looked like properties of individuals or boxes on a chart can be restated as questions about access, dependency, coordination, diffusion, and resilience."
+          "at": 47,
+          "text": "Fully remote employees have less informal cross-team contact under one measured definition, although the cause of that difference remains unresolved."
         },
         {
-          "at": 133,
-          "text": "Better organizational design begins with enough visibility into both layers to specify the mechanism a proposed change is actually intended to improve."
+          "at": 58,
+          "text": "Those patterns motivate different investigations and interventions."
+        },
+        {
+          "at": 64,
+          "text": "Northline can increase redundancy around specialist S, distribute coordination work around broker B, and create additional contact opportunities between separated expertise groups."
+        },
+        {
+          "at": 75,
+          "text": "It can investigate how project assignment and meeting practices affect relational access before attributing the remote-work difference to a particular mechanism."
+        },
+        {
+          "at": 86,
+          "text": "Each proposal has a distinct outcome to test."
+        },
+        {
+          "at": 93,
+          "text": "The proposed reorganization can also be assessed against the current working structure."
+        },
+        {
+          "at": 101,
+          "text": "It would bring 907 cross-boundary ties within new business lines, split 191 currently internal ties, and leave thirteen of 31 leading brokers with substantial cross-line responsibilities."
+        },
+        {
+          "at": 114,
+          "text": "The redesign would align some frequent collaborators under common ownership, potentially addressing part of the cross-functional coordination problem."
+        },
+        {
+          "at": 124,
+          "text": "It would not, by itself, create additional Settlement engine experts or establish the missing relationships between Legacy A and Legacy B specialists."
+        },
+        {
+          "at": 135,
+          "text": "Many of the existing brokerage dependencies would remain."
+        },
+        {
+          "at": 142,
+          "text": "Formal and relational structures answer different questions."
+        },
+        {
+          "at": 148,
+          "text": "Formal structure specifies authority, resource allocation, and responsibility. Relational structure describes the paths through which employees currently exchange information, reach expertise, and coordinate work."
+        },
+        {
+          "at": 160,
+          "text": "Neither representation is complete by itself."
+        },
+        {
+          "at": 166,
+          "text": "The value of network analysis is that it makes relationships available for measurement and comparison."
+        },
+        {
+          "at": 175,
+          "text": "Questions that initially appear to concern individual performance or organizational boundaries can be examined in terms of access, dependence, coordination, diffusion, and the distribution of knowledge."
+        },
+        {
+          "at": 188,
+          "text": "A proposed organizational change becomes easier to evaluate when we can specify which relational process it is intended to alter, measure that process, and test whether the change produces the desired outcome."
         }
       ]
     }
